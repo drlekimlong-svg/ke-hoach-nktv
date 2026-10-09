@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Kế hoạch năm học 2026–2027 · CLB NKTV</title>
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-180.png">
+<style>
+:root {
+  --bg: #E3E8ED; --surface: #FFFFFF; --sunken: #EEF1F4; --field: #FFFFFF; --ink: #17231E; --muted: #55605A; --line: #C6CED6;
+  --accent: #1D5C42; --on-accent: #FFFFFF; --head: #16324F;
+  --warn-bg: #F6E7CF; --warn-ink: #6B4208; --danger: #9C2F2F; --danger-bg: #F7E1DF;
+  --ok-bg: #DCEEE4; --ok-ink: #1D5C42; --info-bg: #DCE7F3; --info-ink: #16324F; --focus: #0B5CAD;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101B26; --surface: #1A2936; --sunken: #142230; --field: #142230; --ink: #E9EEF1; --muted: #A8B4BE; --line: #34495B;
+    --accent: #62B894; --on-accent: #0B1A13; --head: #0C2135;
+    --warn-bg: #3E2F14; --warn-ink: #F0D29A; --danger: #F0908A; --danger-bg: #40201E;
+    --ok-bg: #1B3A2D; --ok-ink: #7FCBA9; --info-bg: #1B3147; --info-ink: #A9C4E0; --focus: #8CC2FF;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif; }
+h1, h2, h3 { margin: 0; line-height: 1.25; }
+p { margin: 0 0 8px; }
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 1px; }
+
+.top { background: var(--head); color: #fff; display: flex; align-items: center; gap: 12px; padding: 10px 16px; }
+.top img { width: 38px; height: 38px; border-radius: 8px; flex: none; }
+.top h1 { font-size: 17px; }
+.top .sub { font-size: 12.5px; opacity: .8; }
+.top .luu { margin-left: auto; font-size: 12.5px; opacity: .85; text-align: right; white-space: nowrap; }
+
+.tabs { position: sticky; top: 0; z-index: 6; background: var(--surface); border-bottom: 1px solid var(--line); display: flex; gap: 2px; overflow-x: auto; padding: 0 10px; }
+.tabs button { border: 0; background: none; color: var(--muted); padding: 12px 14px 9px; border-bottom: 3px solid transparent; white-space: nowrap; }
+.tabs button.on { color: var(--accent); border-color: var(--accent); font-weight: 600; }
+
+main { max-width: 1240px; margin: 0 auto; padding: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+.card > h2 { font-size: 16px; margin-bottom: 10px; }
+.card h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 16px 0 6px; }
+.nho { font-size: 13px; color: var(--muted); }
+.grow { flex: 1; min-width: 0; }
+.hang { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+label { display: block; font-size: 12.5px; color: var(--muted); }
+label > input, label > select, label > textarea { margin-top: 3px; }
+input, select, textarea { font: inherit; color: var(--ink); background: var(--field); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; width: 100%; }
+textarea { resize: vertical; min-height: 38px; display: block; }
+input[type=checkbox] { width: auto; }
+
+.btn { border: 1px solid var(--accent); background: var(--accent); color: var(--on-accent); border-radius: 6px; padding: 8px 14px; font-weight: 600; white-space: nowrap; }
+.btn.nhat { background: transparent; color: var(--accent); }
+.btn.nguy { background: transparent; color: var(--danger); border-color: var(--danger); }
+.btn.nho { padding: 4px 10px; font-weight: 500; font-size: 13px; }
+
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12.5px; font-weight: 600; white-space: nowrap; }
+.tt-chua { background: var(--sunken); color: var(--muted); }
+.tt-dang { background: var(--info-bg); color: var(--info-ink); }
+.tt-cho { background: var(--warn-bg); color: var(--warn-ink); }
+.tt-xong { background: var(--ok-bg); color: var(--ok-ink); }
+.tt-qua { background: var(--danger-bg); color: var(--danger); }
+
+.kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.kpi div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.kpi b { display: block; font-size: 24px; line-height: 1.15; }
+.kpi span { font-size: 12.5px; color: var(--muted); }
+.kpi .do b { color: var(--danger); }
+
+.bar { height: 8px; background: var(--sunken); border-radius: 99px; overflow: hidden; min-width: 70px; }
+.bar i { display: block; height: 100%; background: var(--accent); }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 8px; border-top: 1px solid var(--line); vertical-align: top; }
+thead th { border-top: 0; font-size: 12.5px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+.cuon { overflow-x: auto; }
+tr.bam { cursor: pointer; }
+tr.bam:hover { background: var(--sunken); }
+.so { display: inline-grid; place-items: center; min-width: 28px; height: 28px; padding: 0 6px; border-radius: 8px; background: var(--head); color: #fff; font-weight: 700; font-size: 13.5px; flex: none; }
+
+.hai-cot { display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 14px; align-items: start; }
+.ds { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 6px; position: sticky; top: 56px; max-height: calc(100vh - 70px); overflow: auto; }
+.ds-i { display: flex; gap: 8px; align-items: center; width: 100%; text-align: left; border: 0; background: none; color: var(--ink); padding: 7px 8px; border-radius: 7px; }
+.ds-i b { min-width: 22px; color: var(--muted); }
+.ds-i span { flex: 1; min-width: 0; font-size: 13.5px; line-height: 1.3; }
+.ds-i small { color: var(--muted); white-space: nowrap; }
+.ds-i.on { background: var(--ok-bg); }
+.ds-i.on b { color: var(--accent); }
+.ds-i.them { color: var(--accent); font-weight: 600; }
+
+.dv-head { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; }
+.dv-head h2 { font-size: 19px; }
+.dv-head .nhom { font-size: 12.5px; color: var(--muted); }
+.dk { background: var(--sunken); border-radius: 8px; padding: 9px 12px; margin-bottom: 12px; font-size: 14px; }
+.dk .chip { margin-left: 4px; }
+.dv ul, .dv ol { margin: 0; padding-left: 20px; }
+.chot { margin-bottom: 8px; }
+.chot .cau { font-weight: 600; margin-bottom: 3px; }
+.lk { border: 0; background: none; color: var(--accent); padding: 0; text-decoration: underline; }
+
+.viec, .viec-dau { display: grid; grid-template-columns: minmax(0, 1.5fr) 165px 150px 132px minmax(0, .8fr) 30px; gap: 6px; align-items: start; }
+.viec-dau { font-size: 12.5px; color: var(--muted); font-weight: 600; padding-bottom: 4px; }
+.viec { padding: 7px 0; border-top: 1px solid var(--line); }
+.viec .v-ten { display: flex; gap: 6px; align-items: start; }
+.viec .stt { min-width: 30px; padding-top: 8px; font-size: 13px; color: var(--muted); }
+.viec.xong .v-ten textarea { color: var(--muted); text-decoration: line-through; }
+.qua .v-han input { border-color: var(--danger); background: var(--danger-bg); }
+.goiy { display: block; margin-top: 3px; border: 1px dashed var(--line); background: none; color: var(--muted); border-radius: 6px; font-size: 12px; padding: 2px 6px; width: 100%; text-align: left; }
+.luuy { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.xoa { border: 0; background: none; color: var(--muted); font-size: 20px; line-height: 1; height: 36px; border-radius: 6px; }
+.xoa:hover { color: var(--danger); background: var(--danger-bg); }
+
+.nha th small { display: block; font-weight: 400; color: var(--muted); }
+.nha td, .nha thead th { text-align: center; font-size: 12.5px; white-space: normal; }
+.o { width: 30px; height: 30px; border-radius: 50%; border: 2px solid var(--line); background: var(--surface); color: transparent; font-weight: 700; padding: 0; }
+.o1 { border-color: var(--warn-ink); background: var(--warn-bg); color: var(--warn-ink); }
+.o2 { border-color: var(--accent); background: var(--accent); color: var(--on-accent); }
+
+.buoc { display: flex; gap: 6px; overflow-x: auto; padding: 8px 2px; position: sticky; top: 45px; z-index: 5; background: var(--bg); margin-bottom: 6px; }
+.buoc button { flex: none; min-width: 38px; height: 34px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; padding: 0 8px; }
+.buoc button.co { border-color: var(--accent); color: var(--accent); }
+.buoc button.on { background: var(--head); border-color: var(--head); color: #fff; }
+.dieu-huong { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 20px; }
+
+details.sua, details.meta { margin-top: 12px; }
+details > summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+details.sua > div, details.meta > div { margin-top: 10px; }
+
+.thang { font-size: 15px; margin: 16px 0 6px; }
+.lich-i { display: grid; grid-template-columns: 92px 34px minmax(0, 1fr) 170px 120px; gap: 8px; padding: 7px 0; border-top: 1px solid var(--line); align-items: center; }
+.lich-i .ngay { font-variant-numeric: tabular-nums; }
+.lich-i.g { color: var(--muted); }
+.lich-i.q .ngay { color: var(--danger); font-weight: 600; }
+
+.xem-truoc { background: #fff; color: #111; border: 1px solid var(--line); border-radius: 8px; padding: 22px; overflow-x: auto; }
+footer { max-width: 1240px; margin: 0 auto; padding: 4px 16px 30px; font-size: 12.5px; color: var(--muted); }
+#toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); background: var(--head); color: #fff; padding: 9px 16px; border-radius: 8px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 20; max-width: 92vw; }
+#toast.hien { opacity: 1; }
+#inAn { display: none; }
+
+@media (max-width: 900px) {
+  main { padding: 10px; }
+  .card { padding: 12px; }
+  .hai-cot { grid-template-columns: 1fr; }
+  .ds { position: static; display: flex; overflow-x: auto; max-height: none; gap: 4px; }
+  .ds-i { width: auto; flex: none; max-width: 230px; border: 1px solid var(--line); }
+  .viec-dau { display: none; }
+  .viec { grid-template-columns: 1fr 1fr; }
+  .viec .v-ten { grid-column: 1 / -1; }
+  .viec .xoa { grid-column: 1 / -1; justify-self: end; height: 28px; }
+  .lich-i { grid-template-columns: 84px 30px minmax(0, 1fr); }
+  .lich-i .nguoi, .lich-i .tt { grid-column: 3; }
+  .top .luu { display: none; }
+  .buoc { top: 44px; }
+}
+@media print {
+  body > *:not(#inAn) { display: none !important; }
+  #inAn { display: block; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <img src="icon-192.png" alt="">
+  <div>
+    <h1>Kế hoạch năm học 2026–2027</h1>
+    <div class="sub">CLB Ngoại khoa Trưng Vương · Đón Nhận – Trưởng thành – Trao lại</div>
+  </div>
+  <div class="luu" id="luu"></div>
+</header>
+<nav class="tabs" id="tabs"></nav>
+<main id="view"></main>
+<footer>
+  Dữ liệu phân công (tên người, hạn, ghi chú) chỉ nằm trong trình duyệt của máy này, không gửi lên máy chủ nào. Muốn chuyển sang máy khác: vào <b>Lưu trữ</b>, sao lưu rồi khôi phục. · <span id="phienBan"></span>
+</footer>
+<datalist id="dsNguoi"></datalist>
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="inAn"></div>
+<input type="file" id="tepNhap" accept=".json,application/json" hidden>
+
+<script id="seed" type="application/json">{"phienBan":"1.0","ngayLap":"2026-10-09","namHoc":"2026–2027","donVi":"CLB Ngoại khoa Trưng Vương","cauChuyen":"Đón Nhận – Trưởng thành – Trao lại","trangThaiKhung":"Dự thảo do agent soạn theo yêu cầu của ThS.BS.CK1 Lê Kim Long ngày 09/10/2026. Mục tiêu, việc cụ thể và hạn gợi ý là đề xuất; người phụ trách, hạn và quyết định chỉ có hiệu lực khi được chốt tại cuộc họp.","nha":[{"id":"suzaku","ten":"Suzaku","viet":"Chu Tước"},{"id":"kirin","ten":"Kirin","viet":"Kỳ Lân"},{"id":"seiryu","ten":"Seiryu","viet":"Thanh Long"},{"id":"kois","ten":"YinYang Kois","viet":"Cá Chép"},{"id":"genbu","ten":"Genbu","viet":"Huyền Vũ"},{"id":"byakko","ten":"Byakko","viet":"Bạch Hổ"}],"hopMacDinh":{"ten":"Họp triển khai kế hoạch năm học 2026–2027","ngay":"2026-10-09","chuTri":"ThS.BS.CK1 Lê Kim Long","thanhPhan":"Ban chủ nhiệm CLB; nhóm trưởng các nhà Mascot"},"dauViec":[{"id":"DV01","so":1,"ten":"Nhận diện Mascot nhóm","nhom":"Nhận diện","mucTieu":"Sáu nhà (Suzaku, Kirin, Seiryu, YinYang Kois, Genbu, Byakko) hoàn thành bộ nhận diện của nhà mình: hình dạng mascot ở ba cấp Junior – Senior – Master, bản mô tả tính cách và bộ nhận diện nhóm. BCN duyệt và lưu theo phiên bản.","dieuKien":"Không có. Khởi động ngay sau cuộc họp.","phuThuoc":[],"boiCanh":"Đã có: bộ hình 12 biểu cảm của từng mascot trong thư mục MASCOT; bản tính cách sáu mascot đề xuất V1 trong bộ bàn giao 30/09/2026 (chưa duyệt, cần đại diện từng nhà nhận xét). Bản Yêu cầu chung đã có dự thảo: YEU_CAU_CHUNG_NHAN_DIEN_MASCOT.md.","sanPham":["Bản Yêu cầu chung về nhận diện mascot được thông qua","6 bộ hình mascot, mỗi bộ 3 cấp Junior – Senior – Master","6 bản mô tả tính cách, mỗi bản 1 trang","6 bộ nhận diện nhóm: bảng màu, huy hiệu, khẩu hiệu, mẫu ứng dụng","Biên bản duyệt của BCN: phiên bản, người duyệt, ngày hiệu lực"],"canChot":["Thông qua bản Yêu cầu chung: sửa gì, bổ sung gì?","Ba cấp Junior – Senior – Master ứng với điều kiện nào của thành viên: số năm sinh hoạt, vai trò, hay bậc năng lực?","Ai vẽ: mỗi nhà tự làm, hay một tổ thiết kế chung để giữ phong cách thống nhất? Có dùng công cụ AI tạo hình không?","Hạn nộp bản nháp, hạn nộp bản hoàn chỉnh và ngày BCN duyệt?","Ai duyệt cuối và duyệt theo tiêu chí nào?"],"theoNha":["Cử đại diện","Góp ý tính cách V1","Hình Junior","Hình Senior","Hình Master","Bộ nhận diện","BCN duyệt"],"viec":[{"id":"DV01-01","ten":"Thông qua bản Yêu cầu chung và gửi cho 6 nhà","goiY":"2026-10-11"},{"id":"DV01-02","ten":"Mỗi nhà cử một đại diện phụ trách nhận diện; lập nhóm trao đổi chung","goiY":"2026-10-12"},{"id":"DV01-03","ten":"Mỗi nhà góp ý bản tính cách đề xuất V1: nét nào đúng, nét nào chưa đúng, chuyện hoặc hành vi minh họa","goiY":"2026-10-25"},{"id":"DV01-04","ten":"Nộp bản nháp: phác thảo 3 cấp và bảng màu dự kiến","goiY":"2026-11-01"},{"id":"DV01-05","ten":"Buổi góp ý chéo giữa 6 nhà và BCN: kiểm tính thống nhất phong cách, tránh trùng màu","goiY":"2026-11-08"},{"id":"DV01-06","ten":"Nộp bản hoàn chỉnh: hình 3 cấp, bản tính cách, bộ nhận diện, tệp nguồn","goiY":"2026-11-22"},{"id":"DV01-07","ten":"BCN duyệt; ghi biên bản phiên bản và ngày hiệu lực","goiY":"2026-11-29"},{"id":"DV01-08","ten":"Lưu tệp gốc vào kho chung; công bố nội bộ","goiY":"2026-12-06"}]},{"id":"DV02","so":2,"ten":"File Excel thu thập đề xuất “Năng lực” của thành viên","nhom":"Năng lực và ghi nhận","mucTieu":"Mỗi nhà đề xuất các năng lực mà thành viên CLB cần có và cách ghi nhận từng bậc, theo một mẫu Excel thống nhất. BCN gộp thành Danh mục năng lực phiên bản 1, làm đầu vào cho app quản lý năng lực (đầu việc 4).","dieuKien":"Không có. Cần mẫu Excel thống nhất trước khi giao cho các nhà.","phuThuoc":[],"boiCanh":"Đã có mẫu Hồ sơ năng lực thành viên (dữ liệu minh họa) cho 6 nhà trong thư mục HỒ SƠ NĂNG LỰC/MẪU: hai nhóm năng lực (A. Năng lực cốt lõi; B. Kỹ năng chuyên môn CLB), mỗi năng lực ba bậc Nhận – Trưởng thành – Trao lại, mỗi bậc đạt có mã minh chứng. Danh sách năng lực trong mẫu chỉ là minh họa.","sanPham":["Mẫu Excel đề xuất năng lực: một sheet hướng dẫn, một sheet nhập, một ví dụ điền sẵn","6 file đề xuất của 6 nhà","Bảng tổng hợp đã gộp năng lực trùng","Danh mục năng lực v1 được BCN duyệt: tên, nhóm, mô tả ba bậc, minh chứng, người xác nhận"],"canChot":["Khung phân nhóm: giữ hai nhóm như mẫu hồ sơ (A. Năng lực cốt lõi; B. Kỹ năng chuyên môn CLB) hay thêm nhóm khác?","Ba bậc của mỗi năng lực dùng Nhận – Trưởng thành – Trao lại như mẫu hồ sơ?","Mỗi nhà đề xuất tối thiểu và tối đa bao nhiêu năng lực?","Ai soạn mẫu Excel, ai tổng hợp, hạn nộp?","Điểm học tập có đưa vào hồ sơ không, và lấy đồng ý của thành viên bằng cách nào?"],"theoNha":["Nhận mẫu","Nộp đề xuất","Phản hồi bản gộp"],"viec":[{"id":"DV02-01","ten":"Soạn mẫu Excel: tên năng lực, nhóm, mô tả, biểu hiện ở từng bậc, minh chứng, người xác nhận, chương trình liên quan, người đề xuất","goiY":"2026-10-12"},{"id":"DV02-02","ten":"Gửi mẫu kèm hướng dẫn và một ví dụ điền sẵn cho 6 nhà","goiY":"2026-10-13"},{"id":"DV02-03","ten":"Mỗi nhà họp nhóm, điền và nộp file đề xuất","goiY":"2026-10-25"},{"id":"DV02-04","ten":"Tổng hợp 6 file, gộp năng lực trùng, đánh dấu chỗ các nhà khác nhau","goiY":"2026-11-01"},{"id":"DV02-05","ten":"Gửi bản gộp cho các nhà phản hồi","goiY":"2026-11-05"},{"id":"DV02-06","ten":"BCN họp chốt Danh mục năng lực v1","goiY":"2026-11-08"},{"id":"DV02-07","ten":"Bàn giao Danh mục v1 cho tổ làm app (đầu việc 4)","goiY":"2026-11-09"}]},{"id":"DV03","so":3,"ten":"Side Quest 2: Làm thẻ tên","nhom":"Nhận diện","mucTieu":"Mỗi thành viên có một thẻ tên CLB mang nhận diện của nhà mình và cấp Junior, Senior hoặc Master, có mã QR riêng dùng cho điểm danh (đầu việc 5).","dieuKien":"Sau khi có Mascot được duyệt (đầu việc 1).","phuThuoc":["DV01"],"boiCanh":"","sanPham":["Thể lệ Side Quest 2","Mẫu thẻ (mặt trước, mặt sau) cho 6 nhà × 3 cấp","Danh sách thành viên đã rà: họ tên, nhà, cấp, mã thành viên","Thẻ đã in và phát; sổ ký nhận","Quy định cấp lại và đổi thẻ khi lên cấp"],"canChot":["Thể lệ Side Quest 2: ai tham gia, sản phẩm là gì, tính điểm cộng thế nào (liên quan đầu việc 14)?","Thông tin in trên thẻ: họ tên, nhà, cấp, mã thành viên, QR; có in ảnh và MSSV không?","Quy tắc đặt mã thành viên (mẫu hồ sơ minh họa dùng dạng TV-G10-018)?","Chất liệu, kích thước, dây đeo; số lượng và nguồn kinh phí?","Mốc phát thẻ dự kiến?"],"theoNha":[],"viec":[{"id":"DV03-01","ten":"Chốt thể lệ Side Quest 2 và công bố cho các nhà","goiY":"2026-11-29"},{"id":"DV03-02","ten":"Chốt nội dung in trên thẻ và quy tắc mã thành viên","goiY":"2026-11-29"},{"id":"DV03-03","ten":"Rà danh sách thành viên: họ tên, nhà, cấp","goiY":"2026-12-06"},{"id":"DV03-04","ten":"Thiết kế mẫu thẻ theo bộ nhận diện từng nhà","goiY":"2026-12-13"},{"id":"DV03-05","ten":"Tạo mã QR cho từng thành viên, dùng chung với điểm danh","goiY":"2026-12-13"},{"id":"DV03-06","ten":"Lấy báo giá, duyệt kinh phí, in thử một bộ","goiY":"2026-12-16"},{"id":"DV03-07","ten":"In hàng loạt, phát thẻ, ký nhận","goiY":"2026-12-20"},{"id":"DV03-08","ten":"Ban hành quy định cấp lại và đổi thẻ khi lên cấp","goiY":"2026-12-27"}]},{"id":"DV04","so":4,"ten":"App quản lý năng lực thành viên CLB","nhom":"Năng lực và ghi nhận","mucTieu":"Có một công cụ để ghi nhận, xác nhận và tra cứu năng lực của từng thành viên theo Danh mục năng lực, xuất được Hồ sơ năng lực thành viên theo mẫu đã có.","dieuKien":"Sau khi hoàn thành file Excel đề xuất năng lực và có Danh mục năng lực v1 (đầu việc 2).","phuThuoc":["DV02"],"boiCanh":"Mẫu Hồ sơ năng lực thành viên hai trang đã có (dữ liệu minh họa): bản đồ năng lực, hành trình hoạt động và minh chứng, kế hoạch phát triển, nhận xét đa chiều, xác nhận. Mẫu ghi rõ đây là tài liệu nội bộ, có dữ liệu học tập cá nhân, chỉ chia sẻ khi thành viên đồng ý.","sanPham":["Bản đặc tả: ai nhập, ai xác nhận, ai xem được gì","Quy định bảo mật dữ liệu và mẫu đồng ý của thành viên","Bản thử chạy với một nhà","App dùng cho toàn CLB kèm hướng dẫn sử dụng"],"canChot":["Nền tảng: Google Sheet và Form, web app, hay kết hợp? Ai phụ trách kỹ thuật?","Quy trình xác nhận một bậc năng lực: thành viên tự khai, mentor xác nhận, BCN duyệt?","Ai được xem hồ sơ của ai? Điểm học tập có đưa vào không?","Nhà nào chạy thử trước?","Mốc chạy chính thức?"],"theoNha":[],"viec":[{"id":"DV04-01","ten":"Lập tổ dự án app: đầu mối nghiệp vụ, đầu mối kỹ thuật, đại diện các nhà","goiY":"2026-11-15"},{"id":"DV04-02","ten":"Viết đặc tả: dữ liệu, vai trò, quyền xem, quy trình xác nhận, mẫu xuất hồ sơ","goiY":"2026-11-29"},{"id":"DV04-03","ten":"Soạn quy định bảo mật và mẫu đồng ý của thành viên","goiY":"2026-11-29"},{"id":"DV04-04","ten":"Dựng bản thử","goiY":"2026-12-20"},{"id":"DV04-05","ten":"Nhập dữ liệu và chạy thử với một nhà; thu góp ý","goiY":"2027-01-10"},{"id":"DV04-06","ten":"Sửa theo góp ý; viết hướng dẫn sử dụng","goiY":"2027-01-24"},{"id":"DV04-07","ten":"Tập huấn nhóm trưởng và mentor; triển khai toàn CLB","goiY":"2027-02-28"},{"id":"DV04-08","ten":"Rà soát sau một học kỳ sử dụng","goiY":"2027-06-27"}]},{"id":"DV05","so":5,"ten":"Điểm danh tự động","nhom":"Năng lực và ghi nhận","mucTieu":"Ghi nhận tham dự sinh hoạt và chương trình bằng quét mã QR; dữ liệu về một bảng chung, dùng được cho chuyên cần, điểm cộng và hồ sơ năng lực.","dieuKien":"Sau khi có thẻ tên (đầu việc 3). Có thể chạy sớm bằng mã QR dán lên thẻ sinh viên khi chưa có thẻ tên CLB.","phuThuoc":["DV03"],"thayThe":"Có phương án thay thế: mã QR dán lên thẻ sinh viên.","boiCanh":"Mẫu hồ sơ năng lực có chỉ số chuyên cần theo năm học (số buổi có mặt trên tổng số buổi); dữ liệu điểm danh là nguồn cho chỉ số này.","sanPham":["Quy định điểm danh: có mặt, trễ, vắng có phép, quên thẻ","Mã QR cho từng thành viên","Công cụ quét và bảng dữ liệu chuyên cần","Báo cáo chuyên cần hằng tháng theo nhà"],"canChot":["Chạy ngay bằng mã QR tạm dán thẻ sinh viên, hay chờ thẻ tên?","Công cụ: Google Form và Sheet với QR, hay app quét riêng? Ai phụ trách kỹ thuật?","Ai quét mỗi buổi? Quy định đi trễ, về sớm, vắng có phép?","Chuyên cần dùng vào việc gì: điểm cộng, xét danh hiệu, hồ sơ năng lực?","Buổi nào bắt đầu chạy thử?"],"theoNha":[],"viec":[{"id":"DV05-01","ten":"Chốt quy định điểm danh: tính có mặt, trễ, vắng có phép","goiY":"2026-10-25"},{"id":"DV05-02","ten":"Chọn công cụ và dựng bản thử: mã QR và bảng ghi nhận","goiY":"2026-11-01"},{"id":"DV05-03","ten":"Tạo, in mã QR tạm và phát cho thành viên dán lên thẻ sinh viên","goiY":"2026-11-08"},{"id":"DV05-04","ten":"Chạy thử 2 buổi sinh hoạt, song song điểm danh tay để đối chiếu","goiY":"2026-11-22"},{"id":"DV05-05","ten":"Sửa quy trình; phân công người trực quét theo buổi","goiY":"2026-11-29"},{"id":"DV05-06","ten":"Chuyển mã QR sang thẻ tên CLB khi có thẻ","goiY":"2026-12-27"},{"id":"DV05-07","ten":"Báo cáo chuyên cần hằng tháng theo nhà","goiY":"","luuY":"Việc lặp lại hằng tháng"}]},{"id":"DV06","so":6,"ten":"Góp ý về lưu trữ giấy tờ, quy trình của CLB","nhom":"Nền nếp tổ chức","mucTieu":"Thống nhất nơi lưu, cách đặt tên, phân quyền và người giữ đối với giấy tờ và quy trình của CLB, để tài liệu không phụ thuộc vào một cá nhân và bàn giao được qua các nhiệm kỳ.","dieuKien":"Không có.","phuThuoc":[],"boiCanh":"CLB đã có ba kho Google Drive của hệ thống Hồ sơ năng lực CLB (làm việc nhóm; nguồn gốc hạn chế; minh chứng đã duyệt) và quy ước mã minh chứng. Nên cân nhắc dùng lại, tránh lập kho trùng.","sanPham":["Bảng tổng hợp góp ý của BCN và các nhà","Bảng kiểm kê tài liệu hiện có: ai giữ, ở đâu","Sơ đồ thư mục, quy ước đặt tên tệp, bảng phân quyền","Danh mục giấy tờ phải lưu: quyết định, biên bản, kế hoạch, tài chính, quy trình, tư liệu chương trình","Quy trình lưu trữ và bàn giao khi đổi nhiệm kỳ"],"canChot":["Kho chính đặt ở đâu (Google Drive của tài khoản CLB)? Ai giữ quyền quản trị?","Tài liệu nào chỉ BCN xem, tài liệu nào toàn CLB xem?","Giấy tờ bản giấy có dấu, chữ ký: ai giữ, bản scan lưu ở đâu?","Ai làm đầu mối lưu trữ?","Hạn thu góp ý và hạn chốt cấu trúc?"],"theoNha":["Gửi góp ý","Kê tài liệu nhà đang giữ"],"viec":[{"id":"DV06-01","ten":"Thu góp ý về lưu trữ từ BCN và 6 nhà: khó khăn hiện tại, tài liệu đang nằm ở đâu","goiY":"2026-10-25"},{"id":"DV06-02","ten":"Kiểm kê tài liệu hiện có: ai giữ, ở đâu, định dạng","goiY":"2026-11-01"},{"id":"DV06-03","ten":"Đề xuất sơ đồ thư mục, quy ước đặt tên, phân quyền","goiY":"2026-11-08"},{"id":"DV06-04","ten":"BCN duyệt cấu trúc lưu trữ và người giữ kho","goiY":"2026-11-15"},{"id":"DV06-05","ten":"Chuyển tài liệu về kho chung theo cấu trúc mới","goiY":"2026-12-13"},{"id":"DV06-06","ten":"Viết quy trình lưu trữ và bàn giao; đưa vào Manual (đầu việc 7)","goiY":"2026-12-20"},{"id":"DV06-07","ten":"Rà soát kho định kỳ mỗi học kỳ","goiY":"","luuY":"Việc lặp lại mỗi học kỳ"}]},{"id":"DV07","so":7,"ten":"Soạn Manual cho CLB","nhom":"Nền nếp tổ chức","mucTieu":"Có một cuốn Manual để thành viên mới và ban tổ chức các chương trình tra cứu: tổng quan CLB, quy định CLB, quy chế chi tiêu nội bộ, các chương trình nội bộ cố định hằng năm và các chương trình ngoài CLB.","dieuKien":"Không có. Phần Tổng quan cần câu chữ giá trị, sứ mệnh đã chốt (đầu việc 12).","phuThuoc":[],"lienQuan":["DV12","DV06"],"boiCanh":"Tài liệu đã có để kế thừa: Hồ sơ thông tin CLB; Hướng dẫn sinh hoạt hằng tuần (dự thảo 1.0, 23/08/2026); Manual Discord; khảo sát Camping (góp ý cải tiến vận hành). Các chương trình từng xuất hiện trên Page: Kỹ năng khâu cơ bản, CT-scan bụng, X-quang bụng, CHILL cùng Ngoại khoa, Nhà Ngoại khoa trẻ.","sanPham":["Dàn ý Manual được duyệt","Phần 1. Tổng quan CLB","Phần 2. Quy định CLB","Phần 3. Quy chế chi tiêu nội bộ","Phần 4. Chương trình nội bộ cố định hằng năm: Cozy Christmas, Tất niên, Camping hè và các chương trình khác","Phần 5. Chương trình ngoài CLB","Manual v1 được ban hành"],"canChot":["Dàn ý 5 phần đã đủ chưa? Có thêm sinh hoạt hằng tuần, Discord, lưu trữ?","Ai chủ biên, ai viết từng phần?","Quy chế chi tiêu: ai soạn, ai duyệt?","Danh sách đầy đủ các chương trình nội bộ cố định và chương trình ngoài CLB đưa vào Manual?","Hạn bản thảo và hạn ban hành?"],"theoNha":[],"viec":[{"id":"DV07-01","ten":"Chốt dàn ý và người chủ biên","goiY":"2026-10-18"},{"id":"DV07-02","ten":"Viết Phần 1. Tổng quan: lịch sử, tổ chức, câu chuyện Đón Nhận – Trưởng thành – Trao lại, logo, 6 nhà","goiY":"2026-11-15"},{"id":"DV07-03","ten":"Viết Phần 2. Quy định CLB: quyền và nghĩa vụ thành viên, sinh hoạt, chuyên cần, khen thưởng, kỷ luật","goiY":"2026-11-22"},{"id":"DV07-04","ten":"Viết Phần 3. Quy chế chi tiêu nội bộ: nguồn thu, mức chi, duyệt chi, chứng từ, công khai quỹ","goiY":"2026-11-22"},{"id":"DV07-05","ten":"Viết Phần 4. Chương trình nội bộ cố định: mỗi chương trình một trang gồm mục đích, thời điểm, ban tổ chức, kinh phí, checklist","goiY":"2026-11-29"},{"id":"DV07-06","ten":"Viết Phần 5. Chương trình ngoài CLB: danh mục, quy trình tổ chức, mẫu kế hoạch","goiY":"2026-12-06"},{"id":"DV07-07","ten":"Gộp bản thảo, biên tập, gửi BCN và các nhà góp ý","goiY":"2026-12-20"},{"id":"DV07-08","ten":"Chỉnh sửa, BCN duyệt, ban hành Manual v1","goiY":"2027-01-10"}]},{"id":"DV08","so":8,"ten":"Kế hoạch làm kỷ yếu CLB","nhom":"Nhận diện","mucTieu":"Làm một cuốn kỷ yếu ghi lại con người, hoạt động và các thế hệ của CLB; nội dung có nguồn và có sự đồng ý của người xuất hiện.","dieuKien":"Không có.","phuThuoc":[],"boiCanh":"Mốc lịch sử có nguồn Page: thành lập 06/08/2015; trực thuộc Hội Sinh viên Trường ĐH Y khoa Phạm Ngọc Thạch từ 05/09/2018. Khi viết phần lịch sử, dùng bản đính chính 30/09/2026 trong bộ bàn giao.","sanPham":["Đề cương kỷ yếu: cấu trúc, số trang, phong cách","Dự toán và phương án kinh phí","Kho tư liệu ảnh, bài viết có ghi nguồn và đồng ý sử dụng","Bản dàn trang được duyệt","Kỷ yếu bản in hoặc bản điện tử"],"canChot":["Phạm vi: kỷ yếu năm học 2026–2027, hay kỷ yếu nhiều thế hệ từ 2015?","Thời điểm ra mắt (ví dụ dịp sinh nhật CLB 06/08/2027)?","Hình thức: in, bản điện tử, hay cả hai? Số lượng và nguồn kinh phí?","Ban biên tập gồm ai? Mỗi nhà góp phần nào?","Cách xin đồng ý dùng ảnh và tên của thành viên, cựu thành viên?"],"theoNha":["Cử người vào ban biên tập","Nộp tư liệu","Trang của nhà"],"viec":[{"id":"DV08-01","ten":"Lập ban biên tập; chốt phạm vi và thời điểm ra mắt","goiY":"2026-11-08"},{"id":"DV08-02","ten":"Viết đề cương: các chương, số trang, phần của từng nhà","goiY":"2026-11-29"},{"id":"DV08-03","ten":"Lập dự toán và phương án kinh phí","goiY":"2026-12-13"},{"id":"DV08-04","ten":"Thu tư liệu: ảnh, bài viết, lời nhắn từ các thế hệ; ghi nguồn và đồng ý sử dụng","goiY":"2027-03-28"},{"id":"DV08-05","ten":"Mỗi nhà viết trang của nhà mình","goiY":"2027-03-28"},{"id":"DV08-06","ten":"Biên tập nội dung; kiểm dữ kiện lịch sử với nguồn đã đính chính","goiY":"2027-04-25"},{"id":"DV08-07","ten":"Thiết kế, dàn trang, duyệt bản in thử","goiY":"2027-06-13"},{"id":"DV08-08","ten":"In và ra mắt","goiY":"2027-08-06"}]},{"id":"DV09","so":9,"ten":"Kế hoạch phát triển nguồn tập huấn viên các chương trình","nhom":"Đào tạo","mucTieu":"Mỗi chương trình của CLB có đủ tập huấn viên đạt chuẩn và có lớp kế cận; con đường từ học viên lên trợ giảng rồi tập huấn viên được mô tả rõ.","dieuKien":"Không có.","phuThuoc":[],"lienQuan":["DV02","DV10"],"boiCanh":"Mẫu hồ sơ năng lực mô tả bậc Trao lại là tập huấn, dẫn dắt; có thể dùng bậc này để ghi nhận tập huấn viên.","sanPham":["Bảng nhu cầu tập huấn viên theo từng chương trình","Tiêu chuẩn trợ giảng và tập huấn viên","Lộ trình tập sự và phiếu đánh giá","Lớp tập huấn cho tập huấn viên","Danh sách tập huấn viên, trợ giảng năm học 2026–2027"],"canChot":["Những chương trình nào cần tập huấn viên trong năm nay?","Tiêu chuẩn tối thiểu để làm trợ giảng, tập huấn viên? Ai đánh giá?","Cố vấn chuyên môn cho từng chương trình là ai?","Ghi nhận tập huấn viên bằng gì: bậc Trao lại trong hồ sơ năng lực, điểm cộng, chứng nhận?"],"theoNha":[],"viec":[{"id":"DV09-01","ten":"Lập bảng nhu cầu: từng chương trình cần bao nhiêu tập huấn viên, trợ giảng; hiện có bao nhiêu","goiY":"2026-10-25"},{"id":"DV09-02","ten":"Soạn tiêu chuẩn và lộ trình tập sự: học viên, trợ giảng, dạy có giám sát, tập huấn viên","goiY":"2026-11-08"},{"id":"DV09-03","ten":"Mời cố vấn chuyên môn cho từng chương trình","goiY":"2026-11-15"},{"id":"DV09-04","ten":"Mở đăng ký, chọn ứng viên tập huấn viên từ các nhà","goiY":"2026-11-22"},{"id":"DV09-05","ten":"Tổ chức lớp tập huấn cho tập huấn viên: chuyên môn và kỹ năng dạy","goiY":"2026-12-20"},{"id":"DV09-06","ten":"Cho ứng viên dạy có giám sát; đánh giá bằng phiếu","goiY":"2027-03-28"},{"id":"DV09-07","ten":"Công nhận tập huấn viên; cập nhật hồ sơ năng lực","goiY":"2027-04-11"}]},{"id":"DV10","so":10,"ten":"Kế hoạch tập huấn Junior","nhom":"Đào tạo","mucTieu":"Thành viên Junior có lộ trình rõ: hiểu CLB, đạt các kỹ năng nền, có người dẫn dắt và biết cần làm gì để lên Senior.","dieuKien":"Không có. Lịch cụ thể xếp sau khi chốt mốc tuyển quân (đầu việc 12).","phuThuoc":[],"lienQuan":["DV12","DV09"],"boiCanh":"","sanPham":["Chương trình khung tập huấn Junior: nội dung, số buổi, lịch","Tài liệu và người dạy cho từng buổi","Bảng ghép Junior với người dẫn dắt","Kết quả lượng giá cuối đợt của từng Junior"],"canChot":["Nội dung bắt buộc cho Junior: kỹ năng nào, kiến thức nào, văn hóa CLB?","Số buổi, lịch, hình thức: theo nhà hay chung toàn CLB?","Ai phụ trách chung? Mỗi nhà cử ai dẫn dắt Junior?","Lượng giá thế nào thì coi là hoàn thành? Liên hệ với điều kiện lên Senior?","Bắt đầu khi nào sau tuyển quân?"],"theoNha":["Cử người dẫn dắt","Ghép xong Junior"],"viec":[{"id":"DV10-01","ten":"Soạn chương trình khung: mục tiêu, danh sách buổi, kỹ năng nền","goiY":"2026-11-01"},{"id":"DV10-02","ten":"Phân công người dạy và tài liệu từng buổi","goiY":"2026-11-15"},{"id":"DV10-03","ten":"Ghép Junior với người dẫn dắt ở từng nhà","goiY":"","luuY":"Sau khi có kết quả tuyển quân"},{"id":"DV10-04","ten":"Buổi đón nhận: giới thiệu CLB, câu chuyện, 6 nhà, quy định","goiY":"","luuY":"Sau khi có kết quả tuyển quân"},{"id":"DV10-05","ten":"Triển khai các buổi tập huấn theo lịch","goiY":""},{"id":"DV10-06","ten":"Lượng giá cuối đợt; ghi bậc đạt vào hồ sơ năng lực","goiY":""},{"id":"DV10-07","ten":"Họp rút kinh nghiệm; cập nhật chương trình cho năm sau","goiY":""}]},{"id":"DV11","so":11,"ten":"Chương trình mới: Kỹ năng quản lý thời gian","nhom":"Đào tạo","mucTieu":"Tổ chức workshop Quản lý thời gian cho sinh viên y khoa: hai buổi trực tiếp, buổi nào cũng có lý thuyết và thực hành, người học ra về với một lịch tuần dùng được. Cố vấn: anh Long.","dieuKien":"Không có.","phuThuoc":[],"boiCanh":"Đã có trong thư mục SKILL QUẢN LÝ THỜI GIAN: kế hoạch dự thảo bản 0.7 ngày 05/10/2026 (chưa duyệt; dự kiến 80–90 người, 2 buổi × 180 phút, cách nhau 2 tuần), bài giảng, slide v0.5, biểu mẫu BM01–BM14, sổ tay người học, hướng dẫn người dẫn nhóm, nội dung truyền thông và công cụ Lịch tuần khả thi đã đặt lên web.","sanPham":["Kế hoạch workshop được duyệt, có ngày và địa điểm","Ban tổ chức và người dẫn nhóm đã tập huấn","Danh sách đăng ký và kết quả khảo sát trước workshop (BM01)","Hai buổi workshop đã tổ chức","Báo cáo sau chương trình (BM14)"],"canChot":["Duyệt kế hoạch dự thảo 0.7: giữ 2 buổi × 180 phút, cách nhau 2 tuần?","Ngày tổ chức buổi 1, buổi 2 và địa điểm?","Trưởng ban tổ chức và các tiểu ban: nội dung, hậu cần, truyền thông?","Người dẫn nhóm: kế hoạch dự thảo cần 11–12 người cho 80–90 người học; lấy từ đâu?","Kinh phí in sổ tay và biểu mẫu?"],"theoNha":["Cử người dẫn nhóm"],"viec":[{"id":"DV11-01","ten":"Cố vấn và BCN duyệt kế hoạch; chốt ngày và địa điểm","goiY":"2026-10-18"},{"id":"DV11-02","ten":"Lập ban tổ chức: trưởng ban, nội dung, hậu cần, truyền thông","goiY":"2026-10-18"},{"id":"DV11-03","ten":"Thử công cụ Lịch tuần trên điện thoại Android và iPhone theo phiếu thử","goiY":"2026-10-25"},{"id":"DV11-04","ten":"Tuyển và tập huấn người dẫn nhóm theo Hướng dẫn người dẫn nhóm","goiY":"","luuY":"Tính ngược từ ngày buổi 1"},{"id":"DV11-05","ten":"Mở đăng ký kèm khảo sát trước workshop (BM01); truyền thông","goiY":"","luuY":"Tính ngược từ ngày buổi 1"},{"id":"DV11-06","ten":"In sổ tay người học, biểu mẫu, thẻ tình huống","goiY":"","luuY":"Tính ngược từ ngày buổi 1"},{"id":"DV11-07","ten":"Tổ chức buổi 1","goiY":""},{"id":"DV11-08","ten":"Nhắc và rà soát giữa hai buổi","goiY":""},{"id":"DV11-09","ten":"Tổ chức buổi 2","goiY":""},{"id":"DV11-10","ten":"Khảo sát sau workshop (BM14), báo cáo, rút kinh nghiệm","goiY":""}]},{"id":"DV12","so":12,"ten":"Chốt tuyển quân","nhom":"Tuyển quân và truyền thông","mucTieu":"Chốt phương án tuyển quân năm học 2026–2027: các điểm thay đổi so với mùa trước và thông điệp truyền thông tập trung vào giá trị cốt lõi của CLB. Nhân dịp này giới thiệu cho mọi người biết CLB đã có giá trị cốt lõi, sứ mệnh, tầm nhìn.","dieuKien":"Cần chốt chính thức câu chữ giá trị cốt lõi, sứ mệnh, tầm nhìn trước khi truyền thông.","phuThuoc":[],"lienQuan":["DV10","DV07"],"boiCanh":"Theo hồ sơ CLB ngày 30/09/2026: năm giá trị (Bản lĩnh – Đồng hành – Biết ơn – Trách nhiệm – Chuyên nghiệp) và câu sứ mệnh đang ở trạng thái ứng viên; chưa ghi nhận câu tầm nhìn. Câu chuyện trung tâm đã thống nhất: Đón Nhận – Trưởng thành – Trao lại. Nguyên tắc nền: liêm chính và thực chất.","sanPham":["Biên bản chốt giá trị cốt lõi, sứ mệnh, tầm nhìn: câu chữ, người duyệt, ngày hiệu lực","Phương án tuyển quân: điểm thay đổi, tiêu chí, quy trình, mốc thời gian","Kế hoạch truyền thông và bộ nội dung theo giá trị cốt lõi","Danh sách trúng tuyển và phân nhà","Báo cáo tổng kết mùa tuyển quân"],"canChot":["Chốt chính thức giá trị cốt lõi, sứ mệnh, tầm nhìn: câu chữ chính xác, người duyệt, ngày hiệu lực?","Các điểm thay đổi của mùa tuyển quân này: đối tượng, số lượng, vòng tuyển, tiêu chí, cách xếp nhà?","Mốc thời gian: mở đơn, đóng đơn, các vòng, công bố?","Thông điệp chính và kênh truyền thông; ai duyệt nội dung trước khi đăng?","Trưởng ban tuyển quân và các tiểu ban?"],"theoNha":["Cử người vào ban tuyển quân","Nhận Junior mới"],"viec":[{"id":"DV12-01","ten":"Chốt chính thức giá trị cốt lõi, sứ mệnh, tầm nhìn; ghi biên bản câu chữ, người duyệt, ngày hiệu lực","goiY":"2026-10-11"},{"id":"DV12-02","ten":"Giới thiệu giá trị cốt lõi, sứ mệnh, tầm nhìn cho toàn thể thành viên trước khi truyền thông ra ngoài","goiY":"2026-10-18"},{"id":"DV12-03","ten":"Chốt phương án tuyển quân: điểm thay đổi, tiêu chí, quy trình, mốc thời gian","goiY":"2026-10-18"},{"id":"DV12-04","ten":"Lập ban tuyển quân và phân công tiểu ban","goiY":"2026-10-18"},{"id":"DV12-05","ten":"Soạn kế hoạch truyền thông: thông điệp theo từng giá trị, lịch đăng, kênh","goiY":"2026-10-25"},{"id":"DV12-06","ten":"Sản xuất nội dung (bài viết, hình ảnh, video); duyệt trước khi đăng","goiY":"","luuY":"Theo mốc mở đơn"},{"id":"DV12-07","ten":"Mở đơn, sơ tuyển, các vòng tuyển","goiY":"","luuY":"Theo mốc mở đơn"},{"id":"DV12-08","ten":"Công bố kết quả, phân nhà, bàn giao sang tập huấn Junior (đầu việc 10)","goiY":""},{"id":"DV12-09","ten":"Tổng kết mùa tuyển quân: số đăng ký, số trúng tuyển, bài học","goiY":""}]},{"id":"DV13","so":13,"ten":"Danh mục tiêu chí đánh giá danh hiệu","nhom":"Năng lực và ghi nhận","mucTieu":"Có bộ tiêu chí rõ ràng, đo được và công bố từ đầu năm cho các danh hiệu: Super Junior, Super Senior, Super Group, Bài trình xuất sắc nhất và một số danh hiệu khác. Kết quả xét dựa trên dữ liệu thật: chuyên cần, điểm cộng, hồ sơ năng lực.","dieuKien":"Không có. Nên chốt cùng lúc với quy định điểm cộng (đầu việc 14).","phuThuoc":[],"lienQuan":["DV14","DV05"],"boiCanh":"","sanPham":["Danh mục danh hiệu năm học 2026–2027","Bảng tiêu chí từng danh hiệu: tiêu chí, trọng số, nguồn dữ liệu","Phiếu chấm Bài trình","Quy trình xét và hội đồng xét","Bản công bố tiêu chí cho toàn CLB"],"canChot":["Danh sách danh hiệu năm nay: ngoài bốn danh hiệu đã nêu, thêm danh hiệu nào?","Mỗi danh hiệu xét theo tiêu chí gì, trọng số bao nhiêu, lấy dữ liệu từ đâu?","Hội đồng xét gồm ai? Xử lý thế nào khi bằng điểm hoặc có khiếu nại?","Kỳ xét theo học kỳ hay cả năm? Trao vào dịp nào?","Phần thưởng và kinh phí?"],"theoNha":["Gửi đề xuất danh hiệu","Góp ý dự thảo tiêu chí"],"viec":[{"id":"DV13-01","ten":"Lập tổ soạn tiêu chí; thu đề xuất danh hiệu từ các nhà","goiY":"2026-10-25"},{"id":"DV13-02","ten":"Soạn tiêu chí Super Junior và Super Senior","goiY":"2026-11-08"},{"id":"DV13-03","ten":"Soạn tiêu chí Super Group","goiY":"2026-11-08"},{"id":"DV13-04","ten":"Soạn phiếu chấm Bài trình xuất sắc nhất","goiY":"2026-11-08"},{"id":"DV13-05","ten":"Soạn tiêu chí các danh hiệu khác được chọn","goiY":"2026-11-15"},{"id":"DV13-06","ten":"Lấy ý kiến các nhà; chỉnh sửa","goiY":"2026-11-22"},{"id":"DV13-07","ten":"BCN duyệt; công bố tiêu chí cho toàn CLB","goiY":"2026-11-29"},{"id":"DV13-08","ten":"Xét và trao danh hiệu theo kỳ đã chốt","goiY":""}]},{"id":"DV14","so":14,"ten":"Quản lý điểm cộng của thành viên CLB","nhom":"Năng lực và ghi nhận","mucTieu":"Điểm cộng của thành viên được ghi theo một quy định thống nhất, có minh chứng, có người duyệt, công khai định kỳ và dùng được cho việc xét danh hiệu.","dieuKien":"Không có. Nối với điểm danh (đầu việc 5) và app năng lực (đầu việc 4) khi hai việc đó sẵn sàng.","phuThuoc":[],"lienQuan":["DV13","DV05","DV04"],"boiCanh":"","sanPham":["Quy định điểm cộng: bảng điểm theo loại hoạt động","Quy trình ghi – duyệt – công khai – khiếu nại","Sổ điểm cộng dùng chung","Bảng điểm công khai định kỳ theo nhà","Tổng kết điểm cuối kỳ phục vụ xét danh hiệu"],"canChot":["Hoạt động nào được cộng điểm, mỗi loại bao nhiêu điểm? Có điểm trừ không?","Ai ghi, ai duyệt điểm? Minh chứng cần có?","Ghi ở đâu: Google Sheet chung, hay gộp vào app năng lực (đầu việc 4)?","Chu kỳ công khai bảng điểm và thời hạn khiếu nại?","Điểm cộng dùng vào việc gì: xét danh hiệu, ưu tiên tham gia chương trình, lên cấp?"],"theoNha":["Cử người ghi điểm"],"viec":[{"id":"DV14-01","ten":"Soạn bảng loại hoạt động và mức điểm cộng","goiY":"2026-11-01"},{"id":"DV14-02","ten":"Chốt quy trình ghi – duyệt – công khai – khiếu nại","goiY":"2026-11-08"},{"id":"DV14-03","ten":"Dựng sổ điểm cộng dùng ngay, trước khi có app","goiY":"2026-11-15"},{"id":"DV14-04","ten":"Mỗi nhà cử người ghi điểm; hướng dẫn cách ghi và minh chứng","goiY":"2026-11-15"},{"id":"DV14-05","ten":"BCN duyệt quy định; công bố cùng tiêu chí danh hiệu (đầu việc 13)","goiY":"2026-11-29"},{"id":"DV14-06","ten":"Công khai bảng điểm hằng tháng","goiY":"","luuY":"Việc lặp lại hằng tháng"},{"id":"DV14-07","ten":"Nối dữ liệu điểm danh (đầu việc 5) và app năng lực (đầu việc 4) khi sẵn sàng","goiY":""},{"id":"DV14-08","ten":"Tổng kết điểm cuối kỳ; chuyển hội đồng xét danh hiệu","goiY":""}]}]}</script>
+<script>
+'use strict';
+const SEED = JSON.parse(document.getElementById('seed').textContent);
+const KEY = 'nktv-ke-hoach-2026-2027';
+const TT = { chua: 'Chưa bắt đầu', dang: 'Đang làm', cho: 'Tạm chờ', xong: 'Hoàn thành' };
+const TABS = [['tongquan', 'Tổng quan'], ['hop', 'Họp'], ['dauviec', 'Đầu việc'], ['phancong', 'Phân công'], ['lich', 'Lịch'], ['nhansu', 'Nhân sự'], ['luutru', 'Lưu trữ']];
+const VAI_TRO = ['Ban chủ nhiệm', 'Nhóm trưởng', 'Thành viên', 'Cố vấn', 'Cựu thành viên'];
+const THU = ['CN', 'T2', 'T3', 'T4', 'T5', 'T6', 'T7'];
+const THU_DAY = ['Chủ nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
+
+const $ = (s, r) => (r || document).querySelector(s);
+const $$ = (s, r) => Array.from((r || document).querySelectorAll(s));
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const pad = n => String(n).padStart(2, '0');
+const isoNgay = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+const today = () => isoNgay(new Date());
+const dmy = iso => iso ? iso.slice(8, 10) + '/' + iso.slice(5, 7) + '/' + iso.slice(0, 4) : '';
+const thu = iso => THU[new Date(iso + 'T00:00:00').getDay()];
+const congNgay = (iso, n) => { const d = new Date(iso + 'T00:00:00'); d.setDate(d.getDate() + n); return isoNgay(d); };
+const uid = p => p + '-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+const dong = s => String(s || '').split('\n').map(x => x.trim()).filter(Boolean);
+
+/* ---------- Dữ liệu ---------- */
+function taoDV(d) {
+  return {
+    id: d.id, so: d.so, ten: d.ten, nhom: d.nhom || '', mucTieu: d.mucTieu || '', dieuKien: d.dieuKien || '',
+    phuThuoc: (d.phuThuoc || []).slice(), lienQuan: (d.lienQuan || []).slice(), thayThe: d.thayThe || '', boiCanh: d.boiCanh || '',
+    sanPham: (d.sanPham || []).slice(),
+    canChot: (d.canChot || []).map(c => ({ cau: c, qd: '' })),
+    theoNha: (d.theoNha || []).slice(), nha: {},
+    phuTrach: '', han: '', trangThai: 'chua', ghiChu: '',
+    viec: (d.viec || []).map(v => ({ id: v.id, ten: v.ten, goiY: v.goiY || '', luuY: v.luuY || '', phuTrach: '', han: '', trangThai: 'chua', ghiChu: '' }))
+  };
+}
+function taoHop(o) {
+  return Object.assign({ id: uid('H'), ten: 'Họp CLB', ngay: today(), gioBD: '', gioKT: '', diaDiem: '', chuTri: '', thuKy: '', thanhPhan: '', vang: '', ghi: {}, ketLuan: '' }, o || {});
+}
+function fresh() {
+  return { v: 1, khung: SEED.phienBan, taoLuc: new Date().toISOString(), capNhat: '', nhanSu: [], dauViec: SEED.dauViec.map(taoDV), cuocHop: [taoHop(SEED.hopMacDinh)] };
+}
+function chuan(s) {
+  s.nhanSu = s.nhanSu || []; s.cuocHop = s.cuocHop || [];
+  s.dauViec.forEach(d => {
+    d.viec = d.viec || []; d.canChot = d.canChot || []; d.sanPham = d.sanPham || []; d.theoNha = d.theoNha || []; d.nha = d.nha || {};
+    d.phuThuoc = d.phuThuoc || []; d.lienQuan = d.lienQuan || []; d.trangThai = d.trangThai || 'chua';
+    ['phuTrach', 'han', 'ghiChu', 'ten', 'mucTieu', 'dieuKien', 'boiCanh', 'thayThe', 'nhom'].forEach(k => { if (d[k] == null) d[k] = ''; });
+    d.viec.forEach(v => { v.trangThai = v.trangThai || 'chua'; ['ten', 'phuTrach', 'han', 'ghiChu', 'goiY', 'luuY'].forEach(k => { if (v[k] == null) v[k] = ''; }); });
+  });
+  s.cuocHop.forEach(h => { h.ghi = h.ghi || {}; });
+  if (!s.cuocHop.length) s.cuocHop.push(taoHop(SEED.hopMacDinh));
+  return s;
+}
+function load() {
+  try {
+    const raw = localStorage.getItem(KEY);
+    if (raw) { const s = JSON.parse(raw); if (s && Array.isArray(s.dauViec)) return chuan(s); }
+  } catch (e) { /* dùng khung gốc */ }
+  return fresh();
+}
+let S = load();
+let hen = 0;
+function ghi() {
+  try { localStorage.setItem(KEY, JSON.stringify(S)); const d = new Date(); $('#luu').textContent = 'Đã lưu trên máy này lúc ' + pad(d.getHours()) + ':' + pad(d.getMinutes()); }
+  catch (e) { $('#luu').textContent = 'Không lưu được vào trình duyệt. Hãy sao lưu ra tệp.'; }
+}
+function save() { S.capNhat = new Date().toISOString(); clearTimeout(hen); hen = setTimeout(ghi, 250); }
+window.addEventListener('pagehide', () => { if (S.capNhat) { clearTimeout(hen); ghi(); } });
+
+const byId = id => S.dauViec.find(d => d.id === id);
+const tienDo = d => { const n = d.viec.length, x = d.viec.filter(v => v.trangThai === 'xong').length; return { n, x, pct: n ? Math.round(x * 100 / n) : 0 }; };
+const quaHan = o => !!o.han && o.trangThai !== 'xong' && o.han < today();
+const sapHan = o => { if (!o.han || o.trangThai === 'xong') return false; const t = today(); return o.han >= t && o.han <= congNgay(t, 14); };
+const khoa = d => d.phuThuoc.filter(id => { const p = byId(id); return p && p.trangThai !== 'xong'; });
+const tachTen = s => String(s || '').split(/[,;\/\n]|\s+và\s+/i).map(x => x.trim()).filter(Boolean);
+function tenTrongPhanCong() {
+  const m = new Map();
+  const them = s => tachTen(s).forEach(x => m.set(x.toLowerCase(), x));
+  S.dauViec.forEach(d => { them(d.phuTrach); d.viec.forEach(v => them(v.phuTrach)); });
+  return m;
+}
+function demViec(ten) {
+  const k = ten.trim().toLowerCase(); if (!k) return 0; let n = 0;
+  const co = s => tachTen(s).some(x => x.toLowerCase() === k);
+  S.dauViec.forEach(d => { if (co(d.phuTrach)) n++; d.viec.forEach(v => { if (co(v.phuTrach)) n++; }); });
+  return n;
+}
+
+/* ---------- Trạng thái giao diện ---------- */
+const ui = { tab: 'tongquan', dv: '', hop: '', buoc: 0, loc: { nguoi: '', dv: '', tt: '', kieu: '' }, lichGoiY: true, metaMo: true, suaMo: false, xem: false };
+function hopHienTai() {
+  let h = S.cuocHop.find(x => x.id === ui.hop);
+  if (!h) { h = S.cuocHop[S.cuocHop.length - 1]; ui.hop = h.id; }
+  return h;
+}
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('hien'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('hien'), 3200); }
+function grow(t) { t.style.height = 'auto'; if (t.scrollHeight) t.style.height = (t.scrollHeight + 2) + 'px'; else t.style.height = ''; }
+
+/* ---------- Mảnh giao diện dùng chung ---------- */
+const oTT = (val, attr) => '<select ' + attr + ' aria-label="Trạng thái">' + Object.keys(TT).map(k => '<option value="' + k + '"' + (k === val ? ' selected' : '') + '>' + TT[k] + '</option>').join('') + '</select>';
+const oNguoi = (val, attr) => '<input list="dsNguoi" ' + attr + ' value="' + esc(val) + '" placeholder="Người phụ trách" aria-label="Người phụ trách" autocomplete="off">';
+const chipTT = o => quaHan(o) ? '<span class="chip tt-qua">Quá hạn</span>' : '<span class="chip tt-' + o.trangThai + '">' + TT[o.trangThai] + '</span>';
+
+function htmlViec(d, v, i) {
+  return '<div class="viec' + (v.trangThai === 'xong' ? ' xong' : '') + (quaHan(v) ? ' qua' : '') + '" data-viec="' + esc(v.id) + '">' +
+    '<div class="v-ten"><span class="stt">' + d.so + '.' + (i + 1) + '</span><div class="grow"><textarea rows="1" data-vf="ten" aria-label="Tên việc" placeholder="Tên việc">' + esc(v.ten) + '</textarea>' +
+    (v.luuY ? '<div class="luuy">' + esc(v.luuY) + '</div>' : '') + '</div></div>' +
+    oNguoi(v.phuTrach, 'data-vf="phuTrach"') +
+    '<div class="v-han"><input type="date" data-vf="han" value="' + esc(v.han) + '" aria-label="Hạn">' +
+    (v.goiY ? '<button class="goiy" data-act="dungGoiY"' + (v.han ? ' hidden' : '') + ' title="Bấm để dùng hạn gợi ý">gợi ý ' + thu(v.goiY) + ' ' + dmy(v.goiY) + '</button>' : '') + '</div>' +
+    oTT(v.trangThai, 'data-vf="trangThai"') +
+    '<input data-vf="ghiChu" value="' + esc(v.ghiChu) + '" placeholder="Ghi chú" aria-label="Ghi chú">' +
+    '<button class="xoa" data-act="xoaViec" title="Xóa việc này" aria-label="Xóa việc này">×</button></div>';
+}
+
+function htmlNha(d) {
+  if (!d.theoNha.length) return '';
+  const kyHieu = ['', '…', '✓'], nhan = ['chưa', 'đang làm', 'xong'];
+  return '<h3>Theo dõi theo từng nhà <span class="nho" style="text-transform:none;letter-spacing:0">· bấm vào ô để đổi: trống → đang làm → xong</span></h3><div class="cuon"><table class="nha"><thead><tr><th></th>' +
+    d.theoNha.map(l => '<th>' + esc(l) + '</th>').join('') + '</tr></thead><tbody>' +
+    SEED.nha.map(n => '<tr><th>' + esc(n.ten) + '<small>' + esc(n.viet) + '</small></th>' + d.theoNha.map((l, i) => {
+      const val = (d.nha[n.id] || [])[i] || 0;
+      return '<td><button class="o o' + val + '" data-act="nha" data-nha="' + n.id + '" data-i="' + i + '" aria-label="' + esc(n.ten + ', ' + l + ': ' + nhan[val]) + '">' + kyHieu[val] + '</button></td>';
+    }).join('') + '</tr>').join('') + '</tbody></table></div>';
+}
+
+function htmlDK(d) {
+  if (!d.dieuKien && !d.phuThuoc.length) return '';
+  const k = khoa(d); let tag = '';
+  if (d.phuThuoc.length) tag = k.length
+    ? '<span class="chip tt-cho">Chưa đủ điều kiện: chờ đầu việc ' + k.map(id => byId(id).so).join(', ') + '</span>'
+    : '<span class="chip tt-xong">Đã đủ điều kiện</span>';
+  return '<div class="dk"><b>Điều kiện khởi động.</b> ' + esc(d.dieuKien) + ' ' + tag + (d.thayThe ? ' <span class="chip tt-dang">' + esc(d.thayThe) + '</span>' : '') + '</div>';
+}
+
+function htmlDV(d, hop) {
+  const p = tienDo(d);
+  const lq = d.lienQuan.map(byId).filter(Boolean);
+  const conGoiY = d.viec.some(v => v.goiY && !v.han);
+  return '<article class="card dv" data-dv="' + esc(d.id) + '">' +
+    '<div class="dv-head"><span class="so">' + d.so + '</span><div class="grow"><div class="nhom">' + esc(d.nhom) + '</div><h2>' + esc(d.ten) + '</h2></div><span data-bind="chip">' + chipTT(d) + '</span></div>' +
+    htmlDK(d) +
+    '<div class="grid3"><label>Phụ trách chính' + oNguoi(d.phuTrach, 'data-f="phuTrach"') + '</label>' +
+    '<label>Hạn hoàn thành<input type="date" data-f="han" value="' + esc(d.han) + '"></label>' +
+    '<label>Trạng thái' + oTT(d.trangThai, 'data-f="trangThai"') + '</label></div>' +
+    '<h3>Mục tiêu</h3><p>' + esc(d.mucTieu) + '</p>' +
+    (d.boiCanh ? '<h3>Đã có, cần biết</h3><p>' + esc(d.boiCanh) + '</p>' : '') +
+    (d.sanPham.length ? '<h3>Sản phẩm đầu ra</h3><ul>' + d.sanPham.map(s => '<li>' + esc(s) + '</li>').join('') + '</ul>' : '') +
+    (lq.length ? '<p class="nho" style="margin-top:8px">Liên quan: ' + lq.map(x => '<button class="lk" data-act="moDV" data-id="' + x.id + '">đầu việc ' + x.so + '</button>').join(', ') + '</p>' : '') +
+    (d.canChot.length ? '<h3>Cần chốt</h3>' + d.canChot.map((c, i) => '<div class="chot"><div class="cau">' + (i + 1) + '. ' + esc(c.cau) + '</div><textarea rows="1" data-qd="' + i + '" placeholder="Ghi quyết định…" aria-label="Quyết định cho câu ' + (i + 1) + '">' + esc(c.qd) + '</textarea></div>').join('') : '') +
+    (hop ? '<h3>Ghi chú cuộc họp về đầu việc này</h3><textarea rows="2" data-hopghi="' + esc(d.id) + '" placeholder="Ý kiến, thảo luận, việc phát sinh…">' + esc(hop.ghi[d.id] || '') + '</textarea>' : '') +
+    '<h3>Việc cụ thể <span data-bind="tiendo" style="text-transform:none;letter-spacing:0">· ' + p.x + '/' + p.n + ' việc xong</span></h3>' +
+    '<div class="viec-dau"><div>Việc</div><div>Phụ trách</div><div>Hạn</div><div>Trạng thái</div><div>Ghi chú</div><div></div></div>' +
+    d.viec.map((v, i) => htmlViec(d, v, i)).join('') +
+    '<div class="hang" style="margin-top:10px"><button class="btn nhat nho" data-act="themViec">+ Thêm việc</button>' +
+    (conGoiY ? '<button class="btn nhat nho" data-act="goiYTatCa">Dùng tất cả hạn gợi ý còn trống</button>' : '') + '</div>' +
+    htmlNha(d) +
+    '<h3>Ghi chú chung</h3><textarea rows="2" data-f="ghiChu" placeholder="Ghi chú cho cả đầu việc">' + esc(d.ghiChu) + '</textarea>' +
+    '<details class="sua" data-mo="suaMo"' + (ui.suaMo ? ' open' : '') + '><summary>Sửa khung đầu việc</summary><div>' +
+    '<label>Tên đầu việc<input data-kf="ten" value="' + esc(d.ten) + '"></label>' +
+    '<label style="margin-top:8px">Mục tiêu<textarea rows="2" data-kf="mucTieu">' + esc(d.mucTieu) + '</textarea></label>' +
+    '<label style="margin-top:8px">Điều kiện khởi động<textarea rows="1" data-kf="dieuKien">' + esc(d.dieuKien) + '</textarea></label>' +
+    '<label style="margin-top:8px">Sản phẩm đầu ra, mỗi dòng một sản phẩm<textarea rows="3" data-kf="sanPham">' + esc(d.sanPham.join('\n')) + '</textarea></label>' +
+    '<label style="margin-top:8px">Câu cần chốt, mỗi dòng một câu<textarea rows="3" data-kf="canChot">' + esc(d.canChot.map(c => c.cau).join('\n')) + '</textarea></label>' +
+    '<label style="margin-top:8px">Hạng mục theo dõi theo từng nhà, mỗi dòng một hạng mục (để trống nếu không cần)<textarea rows="2" data-kf="theoNha">' + esc(d.theoNha.join('\n')) + '</textarea></label>' +
+    '<div class="hang" style="margin-top:10px"><button class="btn nguy nho" data-act="dvXoa">Xóa đầu việc này</button></div>' +
+    '</div></details></article>';
+}
+
+/* ---------- Các màn hình ---------- */
+function vTongQuan() {
+  const all = []; S.dauViec.forEach(d => d.viec.forEach(v => all.push({ d, v })));
+  const n = all.length, giao = all.filter(x => x.v.phuTrach.trim()).length, coHan = all.filter(x => x.v.han).length;
+  const xong = all.filter(x => x.v.trangThai === 'xong').length, qua = all.filter(x => quaHan(x.v)).length;
+  const coPT = S.dauViec.filter(d => d.phuTrach.trim()).length;
+  const gan = all.filter(x => quaHan(x.v) || sapHan(x.v)).sort((a, b) => a.v.han < b.v.han ? -1 : 1).slice(0, 12);
+  const canh = []; S.dauViec.forEach(d => d.phuThuoc.forEach(id => { const p = byId(id); if (p) canh.push([p, d]); }));
+  return '<div class="kpi">' +
+    '<div><b>' + coPT + '/' + S.dauViec.length + '</b><span>đầu việc có phụ trách chính</span></div>' +
+    '<div><b>' + giao + '/' + n + '</b><span>việc cụ thể đã có người nhận</span></div>' +
+    '<div><b>' + coHan + '/' + n + '</b><span>việc cụ thể đã chốt hạn</span></div>' +
+    '<div><b>' + xong + '/' + n + '</b><span>việc cụ thể đã hoàn thành</span></div>' +
+    '<div class="' + (qua ? 'do' : '') + '"><b>' + qua + '</b><span>việc quá hạn</span></div></div>' +
+    '<div class="card"><h2>' + S.dauViec.length + ' đầu việc của năm học ' + esc(SEED.namHoc) + '</h2><div class="cuon"><table><thead><tr><th>#</th><th>Đầu việc</th><th>Phụ trách chính</th><th>Hạn</th><th>Tiến độ</th><th>Trạng thái</th></tr></thead><tbody>' +
+    S.dauViec.map(d => {
+      const p = tienDo(d), k = khoa(d);
+      return '<tr class="bam" data-act="moDV" data-id="' + d.id + '"><td><span class="so">' + d.so + '</span></td><td><b>' + esc(d.ten) + '</b><div class="nho">' + esc(d.nhom) +
+        (k.length ? ' · chờ đầu việc ' + k.map(id => byId(id).so).join(', ') : '') + '</div></td><td>' + (esc(d.phuTrach) || '<span class="nho">chưa phân công</span>') + '</td><td style="white-space:nowrap">' + (dmy(d.han) || '<span class="nho">chưa chốt</span>') +
+        '</td><td style="min-width:120px"><div class="bar"><i style="width:' + p.pct + '%"></i></div><div class="nho">' + p.x + '/' + p.n + ' việc</div></td><td>' + chipTT(d) + '</td></tr>';
+    }).join('') + '</tbody></table></div></div>' +
+    '<div class="grid3" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr))">' +
+    '<div class="card"><h2>Điều kiện khởi động</h2>' + (canh.length ? canh.map(c => '<p><span class="so">' + c[0].so + '</span> ' + esc(c[0].ten) + ' ' + chipTT(c[0]) + '<br><span class="nho">→ mở cho</span> <span class="so">' + c[1].so + '</span> ' + esc(c[1].ten) + (c[1].thayThe ? '<br><span class="nho">' + esc(c[1].thayThe) + '</span>' : '') + '</p>').join('') : '<p class="nho">Chưa khai báo điều kiện nào.</p>') + '</div>' +
+    '<div class="card"><h2>Quá hạn và đến hạn trong 14 ngày</h2>' + (gan.length ? gan.map(x => '<p><b style="' + (quaHan(x.v) ? 'color:var(--danger)' : '') + '">' + thu(x.v.han) + ' ' + dmy(x.v.han) + '</b> · <button class="lk" data-act="moDV" data-id="' + x.d.id + '">' + x.d.so + '</button> ' + esc(x.v.ten) + (x.v.phuTrach ? ' <span class="nho">· ' + esc(x.v.phuTrach) + '</span>' : '') + '</p>').join('') : '<p class="nho">Chưa có việc nào đã chốt hạn trong khoảng này.</p>') + '</div></div>' +
+    '<p class="nho">' + esc(SEED.trangThaiKhung) + '</p>';
+}
+
+function vDauViec() {
+  const d = byId(ui.dv) || S.dauViec[0];
+  if (!d) return '<div class="card"><p>Chưa có đầu việc nào.</p><button class="btn" data-act="dvMoi">+ Thêm đầu việc</button></div>';
+  ui.dv = d.id;
+  return '<div class="hai-cot"><aside class="ds">' + S.dauViec.map(x => { const p = tienDo(x); return '<button class="ds-i' + (x.id === d.id ? ' on' : '') + '" data-act="chonDV" data-id="' + x.id + '"><b>' + x.so + '</b><span>' + esc(x.ten) + '</span><small>' + p.x + '/' + p.n + '</small></button>'; }).join('') +
+    '<button class="ds-i them" data-act="dvMoi">+ Thêm đầu việc</button></aside><div>' + htmlDV(d) + '</div></div>';
+}
+
+function vHop() {
+  const h = hopHienTai(), n = S.dauViec.length; if (ui.buoc > n) ui.buoc = n;
+  const cuoi = ui.buoc === n, d = cuoi ? null : S.dauViec[ui.buoc];
+  const o = (k, nhan, kieu) => '<label>' + nhan + '<input ' + (kieu ? 'type="' + kieu + '" ' : '') + 'data-hf="' + k + '" value="' + esc(h[k]) + '"></label>';
+  let than;
+  if (cuoi) {
+    let giao = 0, tong = 0; S.dauViec.forEach(x => x.viec.forEach(v => { tong++; if (v.phuTrach.trim()) giao++; }));
+    than = '<div class="card"><h2>Kết luận chung</h2><textarea rows="5" data-hf="ketLuan" placeholder="Các kết luận của chủ trì, việc cần làm ngay, lịch họp kế tiếp…">' + esc(h.ketLuan) + '</textarea>' +
+      '<p class="nho" style="margin-top:10px">Đã phân công ' + giao + '/' + tong + ' việc cụ thể; ' + S.dauViec.filter(x => x.phuTrach.trim()).length + '/' + n + ' đầu việc có phụ trách chính.</p>' +
+      '<h3>Xuất biên bản của cuộc họp này</h3><div class="hang"><button class="btn" data-act="xDoc">Biên bản Word (.doc)</button><button class="btn nhat" data-act="xIn">In hoặc lưu PDF</button><button class="btn nhat" data-act="xMd">Markdown (.md)</button><button class="btn nhat" data-act="xJson">Sao lưu dữ liệu (.json)</button></div></div>';
+  } else than = htmlDV(d, h);
+  return '<div class="card" data-hop="' + esc(h.id) + '"><div class="hang"><label class="grow">Cuộc họp<select data-chon="hop">' + S.cuocHop.map(x => '<option value="' + x.id + '"' + (x.id === h.id ? ' selected' : '') + '>' + esc(dmy(x.ngay) + ' · ' + x.ten) + '</option>').join('') + '</select></label>' +
+    '<button class="btn nhat" data-act="hopMoi">+ Cuộc họp mới</button><button class="btn nguy" data-act="hopXoa">Xóa</button></div>' +
+    '<details class="meta" data-mo="metaMo"' + (ui.metaMo ? ' open' : '') + '><summary>Thông tin cuộc họp</summary><div><div class="grid3">' +
+    o('ten', 'Tên cuộc họp') + o('ngay', 'Ngày', 'date') + o('gioBD', 'Giờ bắt đầu', 'time') + o('gioKT', 'Giờ kết thúc', 'time') + o('diaDiem', 'Địa điểm') + o('chuTri', 'Chủ trì') + o('thuKy', 'Thư ký') +
+    '</div><div class="grid3" style="margin-top:10px"><label>Thành phần tham dự<textarea rows="2" data-hf="thanhPhan">' + esc(h.thanhPhan) + '</textarea></label><label>Vắng<textarea rows="2" data-hf="vang">' + esc(h.vang) + '</textarea></label></div></div></details></div>' +
+    '<div class="buoc" id="buoc">' + S.dauViec.map((x, i) => '<button data-act="buoc" data-i="' + i + '" class="' + (i === ui.buoc ? 'on' : (x.phuTrach.trim() ? 'co' : '')) + '" title="' + esc(x.ten) + '">' + x.so + '</button>').join('') +
+    '<button data-act="buoc" data-i="' + n + '" class="' + (cuoi ? 'on' : '') + '">Kết luận</button></div>' + than +
+    '<div class="dieu-huong"><button class="btn nhat" data-act="truoc"' + (ui.buoc === 0 ? ' disabled' : '') + '>← Trước</button><span class="nho">' + (cuoi ? 'Kết luận' : 'Đầu việc ' + (ui.buoc + 1) + '/' + n) + '</span><button class="btn" data-act="sau"' + (cuoi ? ' disabled' : '') + '>Tiếp →</button></div>';
+}
+
+function vPhanCong() {
+  const L = ui.loc, kq = [];
+  S.dauViec.forEach(d => d.viec.forEach((v, i) => {
+    if (L.dv && d.id !== L.dv) return;
+    if (L.tt && v.trangThai !== L.tt) return;
+    if (L.nguoi && !tachTen(v.phuTrach).some(x => x.toLowerCase() === L.nguoi)) return;
+    if (L.kieu === 'chuaGiao' && v.phuTrach.trim()) return;
+    if (L.kieu === 'chuaHan' && v.han) return;
+    if (L.kieu === 'quaHan' && !quaHan(v)) return;
+    if (L.kieu === 'sapHan' && !sapHan(v)) return;
+    kq.push({ d, v, i });
+  }));
+  const ten = tenTrongPhanCong();
+  const sel = (k, opts) => '<select data-loc="' + k + '">' + opts.map(o => '<option value="' + esc(o[0]) + '"' + (L[k] === o[0] ? ' selected' : '') + '>' + esc(o[1]) + '</option>').join('') + '</select>';
+  return '<div class="card"><div class="grid3">' +
+    '<label>Người phụ trách' + sel('nguoi', [['', 'Tất cả']].concat(Array.from(ten).sort((a, b) => a[1].localeCompare(b[1], 'vi')).map(x => [x[0], x[1]]))) + '</label>' +
+    '<label>Đầu việc' + sel('dv', [['', 'Tất cả']].concat(S.dauViec.map(d => [d.id, d.so + '. ' + d.ten]))) + '</label>' +
+    '<label>Trạng thái' + sel('tt', [['', 'Tất cả']].concat(Object.keys(TT).map(k => [k, TT[k]]))) + '</label>' +
+    '<label>Lọc nhanh' + sel('kieu', [['', 'Không lọc'], ['chuaGiao', 'Chưa có người nhận'], ['chuaHan', 'Chưa chốt hạn'], ['quaHan', 'Quá hạn'], ['sapHan', 'Đến hạn trong 14 ngày']]) + '</label>' +
+    '</div><div class="hang" style="margin-top:10px"><span class="nho grow">' + kq.length + ' việc</span><button class="btn nhat nho" data-act="xCsv">Xuất bảng phân công (.csv, mở bằng Excel)</button></div></div>' +
+    '<div class="card"><div class="cuon"><table style="min-width:860px"><thead><tr><th>#</th><th>Việc cụ thể</th><th style="width:170px">Phụ trách</th><th style="width:150px">Hạn</th><th style="width:135px">Trạng thái</th><th style="width:190px">Ghi chú</th></tr></thead><tbody>' +
+    (kq.length ? kq.map(x => '<tr class="viec-tr" data-dv="' + x.d.id + '" data-viec="' + esc(x.v.id) + '"><td style="white-space:nowrap"><button class="lk" data-act="moDV" data-id="' + x.d.id + '">' + x.d.so + '.' + (x.i + 1) + '</button></td><td>' + esc(x.v.ten) + '<div class="nho">' + esc(x.d.ten) + '</div></td><td>' + oNguoi(x.v.phuTrach, 'data-vf="phuTrach"') + '</td><td class="v-han"><input type="date" data-vf="han" value="' + esc(x.v.han) + '" aria-label="Hạn">' +
+      (x.v.goiY ? '<button class="goiy" data-act="dungGoiY"' + (x.v.han ? ' hidden' : '') + '>gợi ý ' + dmy(x.v.goiY) + '</button>' : '') + '</td><td>' + oTT(x.v.trangThai, 'data-vf="trangThai"') + '</td><td><input data-vf="ghiChu" value="' + esc(x.v.ghiChu) + '" aria-label="Ghi chú"></td></tr>').join('') : '<tr><td colspan="6" class="nho">Không có việc nào khớp bộ lọc.</td></tr>') +
+    '</tbody></table></div></div>';
+}
+
+function vLich() {
+  const it = []; let trong = 0;
+  S.dauViec.forEach(d => {
+    if (d.han) it.push({ ngay: d.han, d, ten: 'Hạn hoàn thành đầu việc: ' + d.ten, nguoi: d.phuTrach, o: d });
+    d.viec.forEach(v => {
+      if (v.han) it.push({ ngay: v.han, d, ten: v.ten, nguoi: v.phuTrach, o: v });
+      else if (ui.lichGoiY && v.goiY) it.push({ ngay: v.goiY, d, ten: v.ten, nguoi: v.phuTrach, o: v, g: true });
+      else trong++;
+    });
+  });
+  it.sort((a, b) => a.ngay < b.ngay ? -1 : a.ngay > b.ngay ? 1 : a.d.so - b.d.so);
+  let out = '<div class="card"><label style="font-size:15px;color:var(--ink)"><input type="checkbox" data-act="lichGoiY"' + (ui.lichGoiY ? ' checked' : '') + '> Hiện cả hạn gợi ý của những việc chưa chốt hạn (chữ nhạt, ghi “gợi ý”)</label><p class="nho" style="margin:8px 0 0">' + trong + ' việc chưa có hạn' + (ui.lichGoiY ? ' và chưa có hạn gợi ý' : '') + '.</p></div>';
+  if (!it.length) return out + '<div class="card"><p class="nho">Chưa có hạn nào được chốt.</p></div>';
+  let thang = '';
+  out += '<div class="card">';
+  it.forEach(x => {
+    const m = x.ngay.slice(0, 7);
+    if (m !== thang) { thang = m; out += '<h2 class="thang">Tháng ' + m.slice(5) + '/' + m.slice(0, 4) + '</h2>'; }
+    out += '<div class="lich-i' + (x.g ? ' g' : '') + (!x.g && quaHan(x.o) ? ' q' : '') + '"><span class="ngay">' + thu(x.ngay) + ' ' + x.ngay.slice(8) + '/' + x.ngay.slice(5, 7) + '</span><button class="lk" data-act="moDV" data-id="' + x.d.id + '"><span class="so">' + x.d.so + '</span></button><span>' + esc(x.ten) + '</span><span class="nguoi nho">' + (esc(x.nguoi) || 'chưa phân công') + '</span><span class="tt">' + (x.g ? '<span class="chip tt-chua">gợi ý</span>' : chipTT(x.o)) + '</span></div>';
+  });
+  return out + '</div>';
+}
+
+function vNhanSu() {
+  const co = new Set(S.nhanSu.map(p => p.ten.trim().toLowerCase()));
+  const la = Array.from(tenTrongPhanCong()).filter(x => !co.has(x[0]) && x[0] !== 'bcn' && x[0] !== '6 nhà' && x[0].indexOf('nhà ') !== 0).map(x => x[1]);
+  const oVT = (val, attr) => '<select ' + attr + '>' + VAI_TRO.map(k => '<option' + (k === val ? ' selected' : '') + '>' + k + '</option>').join('') + '</select>';
+  const oNha = (val, attr) => '<select ' + attr + '><option value="">Không thuộc nhà nào</option>' + SEED.nha.map(n => '<option value="' + n.id + '"' + (n.id === val ? ' selected' : '') + '>' + esc(n.ten + ' · ' + n.viet) + '</option>').join('') + '</select>';
+  return '<div class="card"><h2>Thêm người</h2><div class="grid3"><label>Họ tên<input id="nsTen" placeholder="Họ và tên"></label><label>Vai trò' + oVT('Nhóm trưởng', 'id="nsVaiTro"') + '</label><label>Nhà' + oNha('', 'id="nsNha"') + '</label></div>' +
+    '<div class="hang" style="margin-top:10px"><button class="btn" data-act="nsThem">Thêm</button></div>' +
+    '<details class="sua"><summary>Thêm nhiều người một lần</summary><div><label>Mỗi dòng một họ tên; vai trò và nhà lấy theo hai ô chọn ở trên<textarea id="nsNhieu" rows="4"></textarea></label><div class="hang" style="margin-top:8px"><button class="btn nhat" data-act="nsThemNhieu">Thêm cả danh sách</button></div></div></details></div>' +
+    (la.length ? '<div class="card"><h2>Tên đã dùng khi phân công nhưng chưa có trong danh sách</h2><div class="hang">' + la.map(t => '<button class="btn nhat nho" data-act="nsThemTen" data-ten="' + esc(t) + '">+ ' + esc(t) + '</button>').join('') + '</div></div>' : '') +
+    '<div class="card"><h2>Danh sách (' + S.nhanSu.length + ')</h2>' + (S.nhanSu.length ? '<div class="cuon"><table style="min-width:640px"><thead><tr><th>Họ tên</th><th style="width:180px">Vai trò</th><th style="width:220px">Nhà</th><th>Số việc</th><th></th></tr></thead><tbody>' +
+      S.nhanSu.map(p => '<tr data-ns="' + p.id + '"><td><input data-nf="ten" value="' + esc(p.ten) + '" aria-label="Họ tên"></td><td>' + oVT(p.vaiTro, 'data-nf="vaiTro" aria-label="Vai trò"') + '</td><td>' + oNha(p.nha, 'data-nf="nha" aria-label="Nhà"') + '</td><td>' + demViec(p.ten) + '</td><td><button class="xoa" data-act="nsXoa" aria-label="Xóa người này">×</button></td></tr>').join('') + '</tbody></table></div>'
+      : '<p class="nho">Chưa có ai. Danh sách này dùng để gợi ý tên khi gõ ô “Người phụ trách”; vẫn gõ tự do được.</p>') + '</div>';
+}
+
+function vLuuTru() {
+  const h = hopHienTai();
+  return '<div class="card"><h2>Biên bản cuộc họp</h2><div class="hang"><label class="grow">Cuộc họp<select data-chon="hop">' + S.cuocHop.map(x => '<option value="' + x.id + '"' + (x.id === h.id ? ' selected' : '') + '>' + esc(dmy(x.ngay) + ' · ' + x.ten) + '</option>').join('') + '</select></label>' +
+    '<button class="btn" data-act="xDoc">Word (.doc)</button><button class="btn nhat" data-act="xIn">In hoặc lưu PDF</button><button class="btn nhat" data-act="xMd">Markdown (.md)</button><button class="btn nhat" data-act="xHtml">Trang web (.html)</button><button class="btn nhat" data-act="xemTruoc">' + (ui.xem ? 'Ẩn xem trước' : 'Xem trước') + '</button></div>' +
+    '<p class="nho" style="margin-top:8px">Biên bản gồm thông tin cuộc họp, quyết định, ghi chú và bảng phân công của cả ' + S.dauViec.length + ' đầu việc tại thời điểm xuất.</p></div>' +
+    (ui.xem ? '<div class="xem-truoc"><style>' + CSS_BB + '</style>' + htmlBienBan(h) + '</div><div style="height:14px"></div>' : '') +
+    '<div class="card"><h2>Bảng phân công</h2><div class="hang"><button class="btn nhat" data-act="xCsv">Bảng tất cả việc (.csv, mở bằng Excel)</button></div></div>' +
+    '<div class="card"><h2>Sao lưu và khôi phục</h2><p class="nho">Tệp sao lưu chứa toàn bộ dữ liệu của app: phân công, hạn, ghi chú, nhân sự, các cuộc họp. Dùng để lưu trữ, chuyển sang máy khác, hoặc gửi cho người cùng quản lý.</p>' +
+    '<div class="hang"><button class="btn" data-act="xJson">Sao lưu dữ liệu (.json)</button><button class="btn nhat" data-act="nhapJson">Khôi phục từ tệp sao lưu…</button><button class="btn nguy" data-act="datLai">Đặt lại về khung gốc</button></div>' +
+    '<p class="nho" style="margin-top:8px">Cập nhật gần nhất: ' + (S.capNhat ? new Date(S.capNhat).toLocaleString('vi-VN') : 'chưa có thay đổi') + '. Trên Chrome và Edge, app hỏi nơi lưu tệp; trình duyệt khác tải về thư mục Tải xuống.</p></div>';
+}
+
+const VIEW = { tongquan: vTongQuan, hop: vHop, dauviec: vDauViec, phancong: vPhanCong, lich: vLich, nhansu: vNhanSu, luutru: vLuuTru };
+function capNhatDsNguoi() {
+  const m = new Map();
+  S.nhanSu.forEach(p => { const t = p.ten.trim(); if (t) m.set(t.toLowerCase(), t); });
+  tenTrongPhanCong().forEach((v, k) => { if (!m.has(k)) m.set(k, v); });
+  ['BCN', '6 nhà'].concat(SEED.nha.map(n => 'Nhà ' + n.ten)).forEach(x => { if (!m.has(x.toLowerCase())) m.set(x.toLowerCase(), x); });
+  $('#dsNguoi').innerHTML = Array.from(m.values()).map(x => '<option value="' + esc(x) + '">').join('');
+}
+function render() {
+  $('#tabs').innerHTML = TABS.map(t => '<button data-tab="' + t[0] + '" class="' + (t[0] === ui.tab ? 'on' : '') + '">' + t[1] + '</button>').join('');
+  const v = $('#view');
+  v.innerHTML = VIEW[ui.tab]();
+  capNhatDsNguoi();
+  $$('textarea', v).forEach(grow);
+}
+function den(tab) { ui.tab = tab; try { history.replaceState(null, '', '#' + tab); } catch (e) { /* bỏ qua */ } render(); }
+
+/* ---------- Biên bản và tệp xuất ---------- */
+const CSS_BB = '.bb{font-family:"Times New Roman",Times,serif;font-size:13pt;line-height:1.4;color:#000}.bb h1{font-size:16pt;text-align:center;margin:6pt 0 12pt}.bb h2{font-size:13.5pt;margin:16pt 0 6pt}.bb h3{font-size:13pt;margin:14pt 0 4pt;text-transform:none;letter-spacing:0;color:#000}.bb p{margin:0 0 5pt}.bb .dv-ten{text-align:center;font-weight:bold;margin:0}.bb table{border-collapse:collapse;width:100%;margin:6pt 0 8pt}.bb th,.bb td{border:1px solid #444;padding:3pt 5pt;vertical-align:top;text-align:left;font-size:12pt;color:#000;white-space:normal}.bb table.meta th{width:26%;background:#f0f0f0}.bb table.pc th{background:#e6e6e6}.bb table.ky td{border:0;text-align:center;font-weight:bold;width:50%;padding-top:14pt}.bb .chan{font-size:10pt;color:#555;margin-top:18pt}.bb .mo{color:#555;font-style:italic}';
+function thoiGianHop(h) { return (h.ngay ? THU_DAY[new Date(h.ngay + 'T00:00:00').getDay()] + ', ngày ' + dmy(h.ngay) : '') + (h.gioBD ? ', từ ' + h.gioBD : '') + (h.gioKT ? ' đến ' + h.gioKT : ''); }
+function viecConNgo() { const r = []; S.dauViec.forEach(d => d.viec.forEach((v, i) => { const t = []; if (!v.phuTrach.trim()) t.push('người phụ trách'); if (!v.han) t.push('hạn'); if (t.length) r.push({ ma: d.so + '.' + (i + 1), ten: v.ten, thieu: t.join(', ') }); })); return r; }
+function tongViec() { return S.dauViec.reduce((a, d) => a + d.viec.length, 0); }
+
+function htmlBienBan(h) {
+  const e = esc, nl = s => e(s).replace(/\n/g, '<br>'), mo = t => '<span class="mo">' + t + '</span>';
+  let o = '<div class="bb"><p class="dv-ten">' + e(SEED.donVi.toUpperCase()) + '</p><h1>BIÊN BẢN<br>' + e(h.ten || 'Cuộc họp') + '</h1>';
+  o += '<table class="meta"><tr><th>Thời gian</th><td>' + (e(thoiGianHop(h)) || mo('chưa ghi')) + '</td></tr><tr><th>Địa điểm</th><td>' + (e(h.diaDiem) || mo('chưa ghi')) + '</td></tr><tr><th>Chủ trì</th><td>' + (e(h.chuTri) || mo('chưa ghi')) + '</td></tr><tr><th>Thư ký</th><td>' + (e(h.thuKy) || mo('chưa ghi')) + '</td></tr><tr><th>Thành phần tham dự</th><td>' + (nl(h.thanhPhan) || mo('chưa ghi')) + '</td></tr>' + (h.vang.trim() ? '<tr><th>Vắng</th><td>' + nl(h.vang) + '</td></tr>' : '') + '</table>';
+  o += '<h2>I. Nội dung và phân công theo đầu việc</h2>';
+  S.dauViec.forEach(d => {
+    o += '<h3>' + d.so + '. ' + e(d.ten) + '</h3>';
+    o += '<p><b>Phụ trách chính:</b> ' + (e(d.phuTrach) || mo('chưa phân công')) + ' · <b>Hạn hoàn thành:</b> ' + (dmy(d.han) || mo('chưa chốt')) + ' · <b>Trạng thái:</b> ' + TT[d.trangThai] + '</p>';
+    if (d.dieuKien) o += '<p><b>Điều kiện khởi động:</b> ' + e(d.dieuKien) + (d.thayThe ? ' ' + e(d.thayThe) : '') + '</p>';
+    const g = (h.ghi[d.id] || '').trim(); if (g) o += '<p><b>Ghi chú cuộc họp:</b> ' + nl(g) + '</p>';
+    if (d.ghiChu.trim()) o += '<p><b>Ghi chú chung:</b> ' + nl(d.ghiChu.trim()) + '</p>';
+    const qd = d.canChot.filter(c => c.qd.trim());
+    if (qd.length) o += '<p><b>Các điểm đã chốt:</b></p><table class="pc"><tr><th style="width:45%">Câu hỏi</th><th>Quyết định</th></tr>' + qd.map(c => '<tr><td>' + e(c.cau) + '</td><td>' + nl(c.qd.trim()) + '</td></tr>').join('') + '</table>';
+    const chua = d.canChot.filter(c => !c.qd.trim());
+    if (chua.length) o += '<p><b>Chưa chốt:</b> ' + chua.map(c => e(c.cau)).join(' · ') + '</p>';
+    if (d.viec.length) o += '<table class="pc"><tr><th style="width:6%">#</th><th>Việc cụ thể</th><th style="width:19%">Phụ trách</th><th style="width:13%">Hạn</th><th style="width:13%">Trạng thái</th><th style="width:17%">Ghi chú</th></tr>' + d.viec.map((v, i) => '<tr><td>' + d.so + '.' + (i + 1) + '</td><td>' + e(v.ten) + '</td><td>' + e(v.phuTrach) + '</td><td>' + dmy(v.han) + '</td><td>' + TT[v.trangThai] + '</td><td>' + e(v.ghiChu) + '</td></tr>').join('') + '</table>';
+    const coNha = d.theoNha.length && SEED.nha.some(n => (d.nha[n.id] || []).some(x => x));
+    if (coNha) o += '<table class="pc"><tr><th>Theo từng nhà</th>' + d.theoNha.map(l => '<th>' + e(l) + '</th>').join('') + '</tr>' + SEED.nha.map(n => '<tr><td>' + e(n.ten) + '</td>' + d.theoNha.map((l, i) => '<td>' + ['', 'đang làm', 'xong'][(d.nha[n.id] || [])[i] || 0] + '</td>').join('') + '</tr>').join('') + '</table>';
+  });
+  o += '<h2>II. Kết luận chung</h2><p>' + (nl(h.ketLuan.trim()) || mo('chưa ghi')) + '</p>';
+  const ngo = viecConNgo();
+  o += '<h2>III. Việc còn để ngỏ</h2>';
+  if (!ngo.length) o += '<p>Tất cả việc cụ thể đã có người phụ trách và hạn.</p>';
+  else if (ngo.length > 40) o += '<p>Còn ' + ngo.length + '/' + tongViec() + ' việc cụ thể chưa đủ người phụ trách hoặc hạn; xem các ô trống trong bảng ở mục I.</p>';
+  else o += '<table class="pc"><tr><th style="width:8%">#</th><th>Việc</th><th style="width:28%">Còn thiếu</th></tr>' + ngo.map(x => '<tr><td>' + x.ma + '</td><td>' + e(x.ten) + '</td><td>' + x.thieu + '</td></tr>').join('') + '</table>';
+  o += '<table class="ky"><tr><td>THƯ KÝ<br><br><br><br>' + e(h.thuKy) + '</td><td>CHỦ TRÌ<br><br><br><br>' + e(h.chuTri) + '</td></tr></table>';
+  o += '<p class="chan">Xuất từ app Kế hoạch năm học ' + e(SEED.namHoc) + ' của ' + e(SEED.donVi) + ' lúc ' + new Date().toLocaleString('vi-VN') + '. Khung kế hoạch bản ' + e(SEED.phienBan) + '.</p></div>';
+  return o;
+}
+function tepHtml(h, word) {
+  return '<!doctype html><html lang="vi"' + (word ? ' xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"' : '') + '><head><meta charset="utf-8"><title>Biên bản ' + esc(h.ten) + ' ' + dmy(h.ngay) + '</title><style>' + (word ? '@page{size:21cm 29.7cm;margin:2cm 2cm 2cm 3cm}' : 'body{max-width:800px;margin:24px auto;padding:0 16px}') + CSS_BB + '</style></head><body>' + htmlBienBan(h) + '</body></html>';
+}
+function mdBienBan(h) {
+  const c = s => String(s || '').replace(/\|/g, '\\|').replace(/\n/g, '<br>'), L = [];
+  L.push('# BIÊN BẢN: ' + (h.ten || 'Cuộc họp'), '', '**' + SEED.donVi + '** · Năm học ' + SEED.namHoc, '', '| | |', '|---|---|');
+  L.push('| Thời gian | ' + c(thoiGianHop(h)) + ' |', '| Địa điểm | ' + c(h.diaDiem) + ' |', '| Chủ trì | ' + c(h.chuTri) + ' |', '| Thư ký | ' + c(h.thuKy) + ' |', '| Thành phần tham dự | ' + c(h.thanhPhan) + ' |');
+  if (h.vang.trim()) L.push('| Vắng | ' + c(h.vang) + ' |');
+  L.push('', '## I. Nội dung và phân công theo đầu việc', '');
+  S.dauViec.forEach(d => {
+    L.push('### ' + d.so + '. ' + d.ten, '');
+    L.push('- **Phụ trách chính:** ' + (d.phuTrach || 'chưa phân công'), '- **Hạn hoàn thành:** ' + (dmy(d.han) || 'chưa chốt'), '- **Trạng thái:** ' + TT[d.trangThai]);
+    if (d.dieuKien) L.push('- **Điều kiện khởi động:** ' + d.dieuKien + (d.thayThe ? ' ' + d.thayThe : ''));
+    const g = (h.ghi[d.id] || '').trim(); if (g) L.push('- **Ghi chú cuộc họp:** ' + g.replace(/\n/g, '<br>'));
+    if (d.ghiChu.trim()) L.push('- **Ghi chú chung:** ' + d.ghiChu.trim().replace(/\n/g, '<br>'));
+    d.canChot.forEach(x => L.push('- ' + (x.qd.trim() ? '**Đã chốt.** ' + x.cau + ' → ' + x.qd.trim().replace(/\n/g, '<br>') : '**Chưa chốt.** ' + x.cau)));
+    if (d.viec.length) {
+      L.push('', '| # | Việc cụ thể | Phụ trách | Hạn | Trạng thái | Ghi chú |', '|---|---|---|---|---|---|');
+      d.viec.forEach((v, i) => L.push('| ' + d.so + '.' + (i + 1) + ' | ' + c(v.ten) + ' | ' + c(v.phuTrach) + ' | ' + dmy(v.han) + ' | ' + TT[v.trangThai] + ' | ' + c(v.ghiChu) + ' |'));
+    }
+    const coNha = d.theoNha.length && SEED.nha.some(n => (d.nha[n.id] || []).some(x => x));
+    if (coNha) {
+      L.push('', '| Theo từng nhà | ' + d.theoNha.map(c).join(' | ') + ' |', '|---|' + d.theoNha.map(() => '---|').join(''));
+      SEED.nha.forEach(n => L.push('| ' + n.ten + ' | ' + d.theoNha.map((l, i) => ['', 'đang làm', 'xong'][(d.nha[n.id] || [])[i] || 0]).join(' | ') + ' |'));
+    }
+    L.push('');
+  });
+  L.push('## II. Kết luận chung', '', h.ketLuan.trim() || '(chưa ghi)', '');
+  const ngo = viecConNgo();
+  L.push('## III. Việc còn để ngỏ', '');
+  if (!ngo.length) L.push('Tất cả việc cụ thể đã có người phụ trách và hạn.');
+  else { L.push('Còn ' + ngo.length + '/' + tongViec() + ' việc cụ thể chưa đủ người phụ trách hoặc hạn.', ''); if (ngo.length <= 40) ngo.forEach(x => L.push('- ' + x.ma + ' ' + x.ten + ' — thiếu: ' + x.thieu)); }
+  L.push('', '---', '', 'Thư ký: ' + (h.thuKy || '') + ' · Chủ trì: ' + (h.chuTri || ''), '', 'Xuất từ app Kế hoạch năm học ' + SEED.namHoc + ' lúc ' + new Date().toLocaleString('vi-VN') + '. Khung kế hoạch bản ' + SEED.phienBan + '.', '');
+  return L.join('\n');
+}
+function csvPhanCong() {
+  const sep = (1.1).toLocaleString().indexOf(',') >= 0 ? ';' : ',';
+  const q = s => '"' + String(s == null ? '' : s).replace(/"/g, '""') + '"';
+  const R = [['Số đầu việc', 'Đầu việc', 'Phụ trách chính', 'Hạn đầu việc', 'Mã việc', 'Việc cụ thể', 'Phụ trách', 'Hạn', 'Hạn gợi ý', 'Trạng thái', 'Ghi chú']];
+  S.dauViec.forEach(d => d.viec.forEach((v, i) => R.push([d.so, d.ten, d.phuTrach, dmy(d.han), d.so + '.' + (i + 1), v.ten, v.phuTrach, dmy(v.han), dmy(v.goiY), TT[v.trangThai], v.ghiChu])));
+  return '﻿' + R.map(r => r.map(q).join(sep)).join('\r\n') + '\r\n';
+}
+async function luuTep(ten, noiDung, mime) {
+  const blob = new Blob([noiDung], { type: mime + ';charset=utf-8' });
+  if (window.showSaveFilePicker) {
+    try {
+      const duoi = ten.slice(ten.lastIndexOf('.'));
+      const hd = await window.showSaveFilePicker({ suggestedName: ten, types: [{ description: 'Tệp lưu trữ', accept: { [mime]: [duoi] } }] });
+      const w = await hd.createWritable(); await w.write(blob); await w.close();
+      toast('Đã lưu ' + hd.name); return;
+    } catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = ten; document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  toast('Đã tải ' + ten + ' về thư mục Tải xuống');
+}
+const tenTep = (dau, h, duoi) => dau + '_' + (h && h.ngay ? h.ngay : today()) + duoi;
+function nhapJson(file) {
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const s = JSON.parse(String(r.result).replace(/^﻿/, ''));
+      if (!s || !Array.isArray(s.dauViec)) throw new Error('sai');
+      if (!confirm('Thay toàn bộ dữ liệu đang có trên máy này bằng tệp sao lưu (cập nhật ' + (s.capNhat ? new Date(s.capNhat).toLocaleString('vi-VN') : 'không rõ') + ')?')) return;
+      S = chuan(s); ui.hop = ''; ui.dv = ''; ui.buoc = 0; S.capNhat = S.capNhat || new Date().toISOString(); ghi(); render(); toast('Đã khôi phục dữ liệu');
+    } catch (e) { alert('Tệp này không phải tệp sao lưu của app.'); }
+  };
+  r.readAsText(file);
+}
+
+/* ---------- Xử lý thao tác ---------- */
+function ctx(el) {
+  const de = el.closest('[data-dv]'), ve = el.closest('[data-viec]');
+  const d = de ? byId(de.dataset.dv) : null;
+  return { de, ve, d, v: d && ve ? d.viec.find(x => x.id === ve.dataset.viec) : null };
+}
+function lamTuoi(de, d) {
+  if (!de || !d) return;
+  const p = tienDo(d);
+  $$('[data-bind=tiendo]', de).forEach(e => { e.textContent = '· ' + p.x + '/' + p.n + ' việc xong'; });
+  $$('[data-bind=chip]', de).forEach(e => { e.innerHTML = chipTT(d); });
+  (de.matches('[data-viec]') ? [de] : $$('[data-viec]', de)).forEach(r => {
+    const v = d.viec.find(x => x.id === r.dataset.viec); if (!v) return;
+    r.classList.toggle('xong', v.trangThai === 'xong'); r.classList.toggle('qua', quaHan(v));
+    const g = $('.goiy', r); if (g) g.hidden = !!v.han;
+  });
+}
+function apDung(t, laChange) {
+  const ds = t.dataset, val = t.value;
+  if (ds.vf) { const c = ctx(t); if (!c.v) return; c.v[ds.vf] = val; save(); lamTuoi(c.de, c.d); return; }
+  if (ds.f) { const c = ctx(t); if (!c.d) return; c.d[ds.f] = val; save(); lamTuoi(c.de, c.d); return; }
+  if ('qd' in ds) { const c = ctx(t); if (!c.d || !c.d.canChot[+ds.qd]) return; c.d.canChot[+ds.qd].qd = val; save(); return; }
+  if (ds.hf) { hopHienTai()[ds.hf] = val; save(); return; }
+  if (ds.hopghi) { hopHienTai().ghi[ds.hopghi] = val; save(); return; }
+  if (ds.nf) { const r = t.closest('[data-ns]'), p = r && S.nhanSu.find(x => x.id === r.dataset.ns); if (!p) return; p[ds.nf] = val; save(); if (laChange) capNhatDsNguoi(); return; }
+  if (!laChange) return;
+  if (ds.kf) {
+    const c = ctx(t); if (!c.d) return; const d = c.d;
+    if (ds.kf === 'sanPham' || ds.kf === 'theoNha') d[ds.kf] = dong(val);
+    else if (ds.kf === 'canChot') d.canChot = dong(val).map((cau, i) => ({ cau, qd: (d.canChot[i] || {}).qd || '' }));
+    else d[ds.kf] = val.trim();
+    save(); render(); return;
+  }
+  if (ds.loc) { ui.loc[ds.loc] = val; render(); return; }
+  if (ds.chon === 'hop') { ui.hop = val; ui.buoc = 0; render(); return; }
+}
+const view = $('#view');
+view.addEventListener('input', e => { const t = e.target; if (t.tagName === 'TEXTAREA') grow(t); apDung(t, false); });
+view.addEventListener('change', e => apDung(e.target, true));
+view.addEventListener('toggle', e => { const t = e.target, k = t.dataset && t.dataset.mo; if (k) ui[k] = t.open; if (t.open) $$('textarea', t).forEach(grow); }, true);
+$('#tabs').addEventListener('click', e => { const b = e.target.closest('button[data-tab]'); if (b) den(b.dataset.tab); });
+$('#tepNhap').addEventListener('change', e => { const f = e.target.files[0]; if (f) nhapJson(f); e.target.value = ''; });
+
+view.addEventListener('click', e => {
+  const b = e.target.closest('[data-act]'); if (!b) return;
+  if (e.target.closest('input, select, textarea') && b.tagName === 'TR') return;
+  const act = b.dataset.act, c = ctx(b), h = hopHienTai();
+  switch (act) {
+    case 'moDV': if (e.target.closest('button') && e.target.closest('button') !== b && b.tagName === 'TR') return; ui.dv = b.dataset.id; den('dauviec'); window.scrollTo(0, 0); break;
+    case 'chonDV': ui.dv = b.dataset.id; render(); break;
+    case 'themViec': {
+      if (!c.d) break; const v = { id: uid(c.d.id), ten: '', goiY: '', luuY: '', phuTrach: '', han: '', trangThai: 'chua', ghiChu: '' };
+      c.d.viec.push(v); save(); render();
+      const el = $('[data-viec="' + v.id + '"] textarea'); if (el) el.focus(); break;
+    }
+    case 'xoaViec': if (!c.v) break; if ((c.v.ten || c.v.phuTrach || c.v.han) && !confirm('Xóa việc “' + (c.v.ten || 'chưa đặt tên') + '”?')) break; c.d.viec = c.d.viec.filter(x => x !== c.v); save(); render(); break;
+    case 'dungGoiY': if (!c.v || !c.v.goiY) break; c.v.han = c.v.goiY; { const i = $('[data-vf=han]', c.ve); if (i) i.value = c.v.han; } save(); lamTuoi(c.de, c.d); break;
+    case 'goiYTatCa': if (!c.d) break; c.d.viec.forEach(v => { if (v.goiY && !v.han) v.han = v.goiY; }); save(); render(); toast('Đã điền hạn gợi ý cho các việc còn trống của đầu việc ' + c.d.so); break;
+    case 'nha': {
+      if (!c.d) break; const a = c.d.nha[b.dataset.nha] = c.d.nha[b.dataset.nha] || [], i = +b.dataset.i, val = ((a[i] || 0) + 1) % 3;
+      a[i] = val; b.className = 'o o' + val; b.textContent = ['', '…', '✓'][val]; save(); break;
+    }
+    case 'dvMoi': {
+      const ten = prompt('Tên đầu việc mới:'); if (!ten || !ten.trim()) break;
+      const so = S.dauViec.reduce((m, d) => Math.max(m, d.so), 0) + 1;
+      const d = taoDV({ id: uid('DV'), so, ten: ten.trim(), nhom: 'Bổ sung' }); S.dauViec.push(d); ui.dv = d.id; ui.suaMo = true; save(); den('dauviec'); break;
+    }
+    case 'dvXoa': if (!c.d) break; if (!confirm('Xóa đầu việc ' + c.d.so + ' “' + c.d.ten + '” cùng ' + c.d.viec.length + ' việc cụ thể? Không hoàn tác được; nên sao lưu trước.')) break; S.dauViec = S.dauViec.filter(x => x !== c.d); ui.dv = ''; ui.buoc = 0; save(); render(); break;
+    case 'buoc': ui.buoc = +b.dataset.i; render(); cuonBuoc(); break;
+    case 'truoc': if (ui.buoc > 0) { ui.buoc--; render(); cuonBuoc(); } break;
+    case 'sau': if (ui.buoc < S.dauViec.length) { ui.buoc++; render(); cuonBuoc(); } break;
+    case 'hopMoi': { const m = taoHop({ ten: 'Họp CLB' }); S.cuocHop.push(m); ui.hop = m.id; ui.buoc = 0; ui.metaMo = true; save(); render(); break; }
+    case 'hopXoa': if (S.cuocHop.length < 2) { toast('Phải giữ ít nhất một cuộc họp'); break; } if (!confirm('Xóa cuộc họp “' + h.ten + '” ngày ' + dmy(h.ngay) + ' cùng ghi chú của cuộc họp? Phân công và hạn không bị xóa.')) break; S.cuocHop = S.cuocHop.filter(x => x !== h); ui.hop = ''; save(); render(); break;
+    case 'lichGoiY': ui.lichGoiY = !ui.lichGoiY; render(); break;
+    case 'nsThem': case 'nsThemNhieu': {
+      const ds = act === 'nsThem' ? [$('#nsTen').value.trim()] : dong($('#nsNhieu').value);
+      const vt = $('#nsVaiTro').value, nha = $('#nsNha').value; let n = 0;
+      ds.filter(Boolean).forEach(ten => { if (!S.nhanSu.some(p => p.ten.trim().toLowerCase() === ten.toLowerCase())) { S.nhanSu.push({ id: uid('P'), ten, vaiTro: vt, nha }); n++; } });
+      if (n) { save(); render(); toast('Đã thêm ' + n + ' người'); } else toast('Không có tên mới để thêm'); break;
+    }
+    case 'nsThemTen': S.nhanSu.push({ id: uid('P'), ten: b.dataset.ten, vaiTro: 'Thành viên', nha: '' }); save(); render(); break;
+    case 'nsXoa': { const r = b.closest('[data-ns]'); S.nhanSu = S.nhanSu.filter(p => p.id !== r.dataset.ns); save(); render(); break; }
+    case 'xDoc': luuTep(tenTep('BIEN_BAN_HOP', h, '.doc'), '﻿' + tepHtml(h, true), 'application/msword'); break;
+    case 'xHtml': luuTep(tenTep('BIEN_BAN_HOP', h, '.html'), tepHtml(h, false), 'text/html'); break;
+    case 'xMd': luuTep(tenTep('BIEN_BAN_HOP', h, '.md'), mdBienBan(h), 'text/markdown'); break;
+    case 'xIn': $('#inAn').innerHTML = '<style>' + CSS_BB + '</style>' + htmlBienBan(h); window.print(); break;
+    case 'xCsv': luuTep(tenTep('PHAN_CONG', null, '.csv'), csvPhanCong(), 'text/csv'); break;
+    case 'xJson': { const d = new Date(); luuTep('SAO_LUU_KE_HOACH_' + today() + '_' + pad(d.getHours()) + pad(d.getMinutes()) + '.json', JSON.stringify(S, null, 1), 'application/json'); break; }
+    case 'nhapJson': $('#tepNhap').click(); break;
+    case 'datLai': if (!confirm('Xóa toàn bộ phân công, hạn, ghi chú, nhân sự và các cuộc họp trên máy này, quay về khung kế hoạch gốc? Nên sao lưu trước.')) break; S = fresh(); ui.hop = ''; ui.dv = ''; ui.buoc = 0; S.capNhat = new Date().toISOString(); ghi(); render(); toast('Đã đặt lại về khung gốc'); break;
+    case 'xemTruoc': ui.xem = !ui.xem; render(); break;
+  }
+});
+function cuonBuoc() {
+  const s = $('#buoc'); if (!s) return;
+  const y = s.getBoundingClientRect().top + window.scrollY - 50; if (window.scrollY > y) window.scrollTo(0, y);
+  const on = $('button.on', s); if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest', inline: 'center' });
+}
+
+/* ---------- Khởi động ---------- */
+$('#phienBan').textContent = 'Khung kế hoạch bản ' + SEED.phienBan + ', lập ngày ' + dmy(SEED.ngayLap);
+(function () { const t = location.hash.slice(1); if (VIEW[t]) ui.tab = t; })();
+if (S.capNhat) $('#luu').textContent = 'Dữ liệu trên máy này, cập nhật ' + new Date(S.capNhat).toLocaleString('vi-VN');
+render();
+</script>
+</body>
+</html>

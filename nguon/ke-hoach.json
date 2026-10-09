@@ -1,0 +1,516 @@
+{
+  "phienBan": "1.0",
+  "ngayLap": "2026-10-09",
+  "namHoc": "2026–2027",
+  "donVi": "CLB Ngoại khoa Trưng Vương",
+  "cauChuyen": "Đón Nhận – Trưởng thành – Trao lại",
+  "trangThaiKhung": "Dự thảo do agent soạn theo yêu cầu của ThS.BS.CK1 Lê Kim Long ngày 09/10/2026. Mục tiêu, việc cụ thể và hạn gợi ý là đề xuất; người phụ trách, hạn và quyết định chỉ có hiệu lực khi được chốt tại cuộc họp.",
+  "nha": [
+    { "id": "suzaku", "ten": "Suzaku", "viet": "Chu Tước" },
+    { "id": "kirin", "ten": "Kirin", "viet": "Kỳ Lân" },
+    { "id": "seiryu", "ten": "Seiryu", "viet": "Thanh Long" },
+    { "id": "kois", "ten": "YinYang Kois", "viet": "Cá Chép" },
+    { "id": "genbu", "ten": "Genbu", "viet": "Huyền Vũ" },
+    { "id": "byakko", "ten": "Byakko", "viet": "Bạch Hổ" }
+  ],
+  "hopMacDinh": {
+    "ten": "Họp triển khai kế hoạch năm học 2026–2027",
+    "ngay": "2026-10-09",
+    "chuTri": "ThS.BS.CK1 Lê Kim Long",
+    "thanhPhan": "Ban chủ nhiệm CLB; nhóm trưởng các nhà Mascot"
+  },
+  "dauViec": [
+    {
+      "id": "DV01",
+      "so": 1,
+      "ten": "Nhận diện Mascot nhóm",
+      "nhom": "Nhận diện",
+      "mucTieu": "Sáu nhà (Suzaku, Kirin, Seiryu, YinYang Kois, Genbu, Byakko) hoàn thành bộ nhận diện của nhà mình: hình dạng mascot ở ba cấp Junior – Senior – Master, bản mô tả tính cách và bộ nhận diện nhóm. BCN duyệt và lưu theo phiên bản.",
+      "dieuKien": "Không có. Khởi động ngay sau cuộc họp.",
+      "phuThuoc": [],
+      "boiCanh": "Đã có: bộ hình 12 biểu cảm của từng mascot trong thư mục MASCOT; bản tính cách sáu mascot đề xuất V1 trong bộ bàn giao 30/09/2026 (chưa duyệt, cần đại diện từng nhà nhận xét). Bản Yêu cầu chung đã có dự thảo: YEU_CAU_CHUNG_NHAN_DIEN_MASCOT.md.",
+      "sanPham": [
+        "Bản Yêu cầu chung về nhận diện mascot được thông qua",
+        "6 bộ hình mascot, mỗi bộ 3 cấp Junior – Senior – Master",
+        "6 bản mô tả tính cách, mỗi bản 1 trang",
+        "6 bộ nhận diện nhóm: bảng màu, huy hiệu, khẩu hiệu, mẫu ứng dụng",
+        "Biên bản duyệt của BCN: phiên bản, người duyệt, ngày hiệu lực"
+      ],
+      "canChot": [
+        "Thông qua bản Yêu cầu chung: sửa gì, bổ sung gì?",
+        "Ba cấp Junior – Senior – Master ứng với điều kiện nào của thành viên: số năm sinh hoạt, vai trò, hay bậc năng lực?",
+        "Ai vẽ: mỗi nhà tự làm, hay một tổ thiết kế chung để giữ phong cách thống nhất? Có dùng công cụ AI tạo hình không?",
+        "Hạn nộp bản nháp, hạn nộp bản hoàn chỉnh và ngày BCN duyệt?",
+        "Ai duyệt cuối và duyệt theo tiêu chí nào?"
+      ],
+      "theoNha": ["Cử đại diện", "Góp ý tính cách V1", "Hình Junior", "Hình Senior", "Hình Master", "Bộ nhận diện", "BCN duyệt"],
+      "viec": [
+        { "id": "DV01-01", "ten": "Thông qua bản Yêu cầu chung và gửi cho 6 nhà", "goiY": "2026-10-11" },
+        { "id": "DV01-02", "ten": "Mỗi nhà cử một đại diện phụ trách nhận diện; lập nhóm trao đổi chung", "goiY": "2026-10-12" },
+        { "id": "DV01-03", "ten": "Mỗi nhà góp ý bản tính cách đề xuất V1: nét nào đúng, nét nào chưa đúng, chuyện hoặc hành vi minh họa", "goiY": "2026-10-25" },
+        { "id": "DV01-04", "ten": "Nộp bản nháp: phác thảo 3 cấp và bảng màu dự kiến", "goiY": "2026-11-01" },
+        { "id": "DV01-05", "ten": "Buổi góp ý chéo giữa 6 nhà và BCN: kiểm tính thống nhất phong cách, tránh trùng màu", "goiY": "2026-11-08" },
+        { "id": "DV01-06", "ten": "Nộp bản hoàn chỉnh: hình 3 cấp, bản tính cách, bộ nhận diện, tệp nguồn", "goiY": "2026-11-22" },
+        { "id": "DV01-07", "ten": "BCN duyệt; ghi biên bản phiên bản và ngày hiệu lực", "goiY": "2026-11-29" },
+        { "id": "DV01-08", "ten": "Lưu tệp gốc vào kho chung; công bố nội bộ", "goiY": "2026-12-06" }
+      ]
+    },
+    {
+      "id": "DV02",
+      "so": 2,
+      "ten": "File Excel thu thập đề xuất “Năng lực” của thành viên",
+      "nhom": "Năng lực và ghi nhận",
+      "mucTieu": "Mỗi nhà đề xuất các năng lực mà thành viên CLB cần có và cách ghi nhận từng bậc, theo một mẫu Excel thống nhất. BCN gộp thành Danh mục năng lực phiên bản 1, làm đầu vào cho app quản lý năng lực (đầu việc 4).",
+      "dieuKien": "Không có. Cần mẫu Excel thống nhất trước khi giao cho các nhà.",
+      "phuThuoc": [],
+      "boiCanh": "Đã có mẫu Hồ sơ năng lực thành viên (dữ liệu minh họa) cho 6 nhà trong thư mục HỒ SƠ NĂNG LỰC/MẪU: hai nhóm năng lực (A. Năng lực cốt lõi; B. Kỹ năng chuyên môn CLB), mỗi năng lực ba bậc Nhận – Trưởng thành – Trao lại, mỗi bậc đạt có mã minh chứng. Danh sách năng lực trong mẫu chỉ là minh họa.",
+      "sanPham": [
+        "Mẫu Excel đề xuất năng lực: một sheet hướng dẫn, một sheet nhập, một ví dụ điền sẵn",
+        "6 file đề xuất của 6 nhà",
+        "Bảng tổng hợp đã gộp năng lực trùng",
+        "Danh mục năng lực v1 được BCN duyệt: tên, nhóm, mô tả ba bậc, minh chứng, người xác nhận"
+      ],
+      "canChot": [
+        "Khung phân nhóm: giữ hai nhóm như mẫu hồ sơ (A. Năng lực cốt lõi; B. Kỹ năng chuyên môn CLB) hay thêm nhóm khác?",
+        "Ba bậc của mỗi năng lực dùng Nhận – Trưởng thành – Trao lại như mẫu hồ sơ?",
+        "Mỗi nhà đề xuất tối thiểu và tối đa bao nhiêu năng lực?",
+        "Ai soạn mẫu Excel, ai tổng hợp, hạn nộp?",
+        "Điểm học tập có đưa vào hồ sơ không, và lấy đồng ý của thành viên bằng cách nào?"
+      ],
+      "theoNha": ["Nhận mẫu", "Nộp đề xuất", "Phản hồi bản gộp"],
+      "viec": [
+        { "id": "DV02-01", "ten": "Soạn mẫu Excel: tên năng lực, nhóm, mô tả, biểu hiện ở từng bậc, minh chứng, người xác nhận, chương trình liên quan, người đề xuất", "goiY": "2026-10-12" },
+        { "id": "DV02-02", "ten": "Gửi mẫu kèm hướng dẫn và một ví dụ điền sẵn cho 6 nhà", "goiY": "2026-10-13" },
+        { "id": "DV02-03", "ten": "Mỗi nhà họp nhóm, điền và nộp file đề xuất", "goiY": "2026-10-25" },
+        { "id": "DV02-04", "ten": "Tổng hợp 6 file, gộp năng lực trùng, đánh dấu chỗ các nhà khác nhau", "goiY": "2026-11-01" },
+        { "id": "DV02-05", "ten": "Gửi bản gộp cho các nhà phản hồi", "goiY": "2026-11-05" },
+        { "id": "DV02-06", "ten": "BCN họp chốt Danh mục năng lực v1", "goiY": "2026-11-08" },
+        { "id": "DV02-07", "ten": "Bàn giao Danh mục v1 cho tổ làm app (đầu việc 4)", "goiY": "2026-11-09" }
+      ]
+    },
+    {
+      "id": "DV03",
+      "so": 3,
+      "ten": "Side Quest 2: Làm thẻ tên",
+      "nhom": "Nhận diện",
+      "mucTieu": "Mỗi thành viên có một thẻ tên CLB mang nhận diện của nhà mình và cấp Junior, Senior hoặc Master, có mã QR riêng dùng cho điểm danh (đầu việc 5).",
+      "dieuKien": "Sau khi có Mascot được duyệt (đầu việc 1).",
+      "phuThuoc": ["DV01"],
+      "boiCanh": "",
+      "sanPham": [
+        "Thể lệ Side Quest 2",
+        "Mẫu thẻ (mặt trước, mặt sau) cho 6 nhà × 3 cấp",
+        "Danh sách thành viên đã rà: họ tên, nhà, cấp, mã thành viên",
+        "Thẻ đã in và phát; sổ ký nhận",
+        "Quy định cấp lại và đổi thẻ khi lên cấp"
+      ],
+      "canChot": [
+        "Thể lệ Side Quest 2: ai tham gia, sản phẩm là gì, tính điểm cộng thế nào (liên quan đầu việc 14)?",
+        "Thông tin in trên thẻ: họ tên, nhà, cấp, mã thành viên, QR; có in ảnh và MSSV không?",
+        "Quy tắc đặt mã thành viên (mẫu hồ sơ minh họa dùng dạng TV-G10-018)?",
+        "Chất liệu, kích thước, dây đeo; số lượng và nguồn kinh phí?",
+        "Mốc phát thẻ dự kiến?"
+      ],
+      "theoNha": [],
+      "viec": [
+        { "id": "DV03-01", "ten": "Chốt thể lệ Side Quest 2 và công bố cho các nhà", "goiY": "2026-11-29" },
+        { "id": "DV03-02", "ten": "Chốt nội dung in trên thẻ và quy tắc mã thành viên", "goiY": "2026-11-29" },
+        { "id": "DV03-03", "ten": "Rà danh sách thành viên: họ tên, nhà, cấp", "goiY": "2026-12-06" },
+        { "id": "DV03-04", "ten": "Thiết kế mẫu thẻ theo bộ nhận diện từng nhà", "goiY": "2026-12-13" },
+        { "id": "DV03-05", "ten": "Tạo mã QR cho từng thành viên, dùng chung với điểm danh", "goiY": "2026-12-13" },
+        { "id": "DV03-06", "ten": "Lấy báo giá, duyệt kinh phí, in thử một bộ", "goiY": "2026-12-16" },
+        { "id": "DV03-07", "ten": "In hàng loạt, phát thẻ, ký nhận", "goiY": "2026-12-20" },
+        { "id": "DV03-08", "ten": "Ban hành quy định cấp lại và đổi thẻ khi lên cấp", "goiY": "2026-12-27" }
+      ]
+    },
+    {
+      "id": "DV04",
+      "so": 4,
+      "ten": "App quản lý năng lực thành viên CLB",
+      "nhom": "Năng lực và ghi nhận",
+      "mucTieu": "Có một công cụ để ghi nhận, xác nhận và tra cứu năng lực của từng thành viên theo Danh mục năng lực, xuất được Hồ sơ năng lực thành viên theo mẫu đã có.",
+      "dieuKien": "Sau khi hoàn thành file Excel đề xuất năng lực và có Danh mục năng lực v1 (đầu việc 2).",
+      "phuThuoc": ["DV02"],
+      "boiCanh": "Mẫu Hồ sơ năng lực thành viên hai trang đã có (dữ liệu minh họa): bản đồ năng lực, hành trình hoạt động và minh chứng, kế hoạch phát triển, nhận xét đa chiều, xác nhận. Mẫu ghi rõ đây là tài liệu nội bộ, có dữ liệu học tập cá nhân, chỉ chia sẻ khi thành viên đồng ý.",
+      "sanPham": [
+        "Bản đặc tả: ai nhập, ai xác nhận, ai xem được gì",
+        "Quy định bảo mật dữ liệu và mẫu đồng ý của thành viên",
+        "Bản thử chạy với một nhà",
+        "App dùng cho toàn CLB kèm hướng dẫn sử dụng"
+      ],
+      "canChot": [
+        "Nền tảng: Google Sheet và Form, web app, hay kết hợp? Ai phụ trách kỹ thuật?",
+        "Quy trình xác nhận một bậc năng lực: thành viên tự khai, mentor xác nhận, BCN duyệt?",
+        "Ai được xem hồ sơ của ai? Điểm học tập có đưa vào không?",
+        "Nhà nào chạy thử trước?",
+        "Mốc chạy chính thức?"
+      ],
+      "theoNha": [],
+      "viec": [
+        { "id": "DV04-01", "ten": "Lập tổ dự án app: đầu mối nghiệp vụ, đầu mối kỹ thuật, đại diện các nhà", "goiY": "2026-11-15" },
+        { "id": "DV04-02", "ten": "Viết đặc tả: dữ liệu, vai trò, quyền xem, quy trình xác nhận, mẫu xuất hồ sơ", "goiY": "2026-11-29" },
+        { "id": "DV04-03", "ten": "Soạn quy định bảo mật và mẫu đồng ý của thành viên", "goiY": "2026-11-29" },
+        { "id": "DV04-04", "ten": "Dựng bản thử", "goiY": "2026-12-20" },
+        { "id": "DV04-05", "ten": "Nhập dữ liệu và chạy thử với một nhà; thu góp ý", "goiY": "2027-01-10" },
+        { "id": "DV04-06", "ten": "Sửa theo góp ý; viết hướng dẫn sử dụng", "goiY": "2027-01-24" },
+        { "id": "DV04-07", "ten": "Tập huấn nhóm trưởng và mentor; triển khai toàn CLB", "goiY": "2027-02-28" },
+        { "id": "DV04-08", "ten": "Rà soát sau một học kỳ sử dụng", "goiY": "2027-06-27" }
+      ]
+    },
+    {
+      "id": "DV05",
+      "so": 5,
+      "ten": "Điểm danh tự động",
+      "nhom": "Năng lực và ghi nhận",
+      "mucTieu": "Ghi nhận tham dự sinh hoạt và chương trình bằng quét mã QR; dữ liệu về một bảng chung, dùng được cho chuyên cần, điểm cộng và hồ sơ năng lực.",
+      "dieuKien": "Sau khi có thẻ tên (đầu việc 3). Có thể chạy sớm bằng mã QR dán lên thẻ sinh viên khi chưa có thẻ tên CLB.",
+      "phuThuoc": ["DV03"],
+      "thayThe": "Có phương án thay thế: mã QR dán lên thẻ sinh viên.",
+      "boiCanh": "Mẫu hồ sơ năng lực có chỉ số chuyên cần theo năm học (số buổi có mặt trên tổng số buổi); dữ liệu điểm danh là nguồn cho chỉ số này.",
+      "sanPham": [
+        "Quy định điểm danh: có mặt, trễ, vắng có phép, quên thẻ",
+        "Mã QR cho từng thành viên",
+        "Công cụ quét và bảng dữ liệu chuyên cần",
+        "Báo cáo chuyên cần hằng tháng theo nhà"
+      ],
+      "canChot": [
+        "Chạy ngay bằng mã QR tạm dán thẻ sinh viên, hay chờ thẻ tên?",
+        "Công cụ: Google Form và Sheet với QR, hay app quét riêng? Ai phụ trách kỹ thuật?",
+        "Ai quét mỗi buổi? Quy định đi trễ, về sớm, vắng có phép?",
+        "Chuyên cần dùng vào việc gì: điểm cộng, xét danh hiệu, hồ sơ năng lực?",
+        "Buổi nào bắt đầu chạy thử?"
+      ],
+      "theoNha": [],
+      "viec": [
+        { "id": "DV05-01", "ten": "Chốt quy định điểm danh: tính có mặt, trễ, vắng có phép", "goiY": "2026-10-25" },
+        { "id": "DV05-02", "ten": "Chọn công cụ và dựng bản thử: mã QR và bảng ghi nhận", "goiY": "2026-11-01" },
+        { "id": "DV05-03", "ten": "Tạo, in mã QR tạm và phát cho thành viên dán lên thẻ sinh viên", "goiY": "2026-11-08" },
+        { "id": "DV05-04", "ten": "Chạy thử 2 buổi sinh hoạt, song song điểm danh tay để đối chiếu", "goiY": "2026-11-22" },
+        { "id": "DV05-05", "ten": "Sửa quy trình; phân công người trực quét theo buổi", "goiY": "2026-11-29" },
+        { "id": "DV05-06", "ten": "Chuyển mã QR sang thẻ tên CLB khi có thẻ", "goiY": "2026-12-27" },
+        { "id": "DV05-07", "ten": "Báo cáo chuyên cần hằng tháng theo nhà", "goiY": "", "luuY": "Việc lặp lại hằng tháng" }
+      ]
+    },
+    {
+      "id": "DV06",
+      "so": 6,
+      "ten": "Góp ý về lưu trữ giấy tờ, quy trình của CLB",
+      "nhom": "Nền nếp tổ chức",
+      "mucTieu": "Thống nhất nơi lưu, cách đặt tên, phân quyền và người giữ đối với giấy tờ và quy trình của CLB, để tài liệu không phụ thuộc vào một cá nhân và bàn giao được qua các nhiệm kỳ.",
+      "dieuKien": "Không có.",
+      "phuThuoc": [],
+      "boiCanh": "CLB đã có ba kho Google Drive của hệ thống Hồ sơ năng lực CLB (làm việc nhóm; nguồn gốc hạn chế; minh chứng đã duyệt) và quy ước mã minh chứng. Nên cân nhắc dùng lại, tránh lập kho trùng.",
+      "sanPham": [
+        "Bảng tổng hợp góp ý của BCN và các nhà",
+        "Bảng kiểm kê tài liệu hiện có: ai giữ, ở đâu",
+        "Sơ đồ thư mục, quy ước đặt tên tệp, bảng phân quyền",
+        "Danh mục giấy tờ phải lưu: quyết định, biên bản, kế hoạch, tài chính, quy trình, tư liệu chương trình",
+        "Quy trình lưu trữ và bàn giao khi đổi nhiệm kỳ"
+      ],
+      "canChot": [
+        "Kho chính đặt ở đâu (Google Drive của tài khoản CLB)? Ai giữ quyền quản trị?",
+        "Tài liệu nào chỉ BCN xem, tài liệu nào toàn CLB xem?",
+        "Giấy tờ bản giấy có dấu, chữ ký: ai giữ, bản scan lưu ở đâu?",
+        "Ai làm đầu mối lưu trữ?",
+        "Hạn thu góp ý và hạn chốt cấu trúc?"
+      ],
+      "theoNha": ["Gửi góp ý", "Kê tài liệu nhà đang giữ"],
+      "viec": [
+        { "id": "DV06-01", "ten": "Thu góp ý về lưu trữ từ BCN và 6 nhà: khó khăn hiện tại, tài liệu đang nằm ở đâu", "goiY": "2026-10-25" },
+        { "id": "DV06-02", "ten": "Kiểm kê tài liệu hiện có: ai giữ, ở đâu, định dạng", "goiY": "2026-11-01" },
+        { "id": "DV06-03", "ten": "Đề xuất sơ đồ thư mục, quy ước đặt tên, phân quyền", "goiY": "2026-11-08" },
+        { "id": "DV06-04", "ten": "BCN duyệt cấu trúc lưu trữ và người giữ kho", "goiY": "2026-11-15" },
+        { "id": "DV06-05", "ten": "Chuyển tài liệu về kho chung theo cấu trúc mới", "goiY": "2026-12-13" },
+        { "id": "DV06-06", "ten": "Viết quy trình lưu trữ và bàn giao; đưa vào Manual (đầu việc 7)", "goiY": "2026-12-20" },
+        { "id": "DV06-07", "ten": "Rà soát kho định kỳ mỗi học kỳ", "goiY": "", "luuY": "Việc lặp lại mỗi học kỳ" }
+      ]
+    },
+    {
+      "id": "DV07",
+      "so": 7,
+      "ten": "Soạn Manual cho CLB",
+      "nhom": "Nền nếp tổ chức",
+      "mucTieu": "Có một cuốn Manual để thành viên mới và ban tổ chức các chương trình tra cứu: tổng quan CLB, quy định CLB, quy chế chi tiêu nội bộ, các chương trình nội bộ cố định hằng năm và các chương trình ngoài CLB.",
+      "dieuKien": "Không có. Phần Tổng quan cần câu chữ giá trị, sứ mệnh đã chốt (đầu việc 12).",
+      "phuThuoc": [],
+      "lienQuan": ["DV12", "DV06"],
+      "boiCanh": "Tài liệu đã có để kế thừa: Hồ sơ thông tin CLB; Hướng dẫn sinh hoạt hằng tuần (dự thảo 1.0, 23/08/2026); Manual Discord; khảo sát Camping (góp ý cải tiến vận hành). Các chương trình từng xuất hiện trên Page: Kỹ năng khâu cơ bản, CT-scan bụng, X-quang bụng, CHILL cùng Ngoại khoa, Nhà Ngoại khoa trẻ.",
+      "sanPham": [
+        "Dàn ý Manual được duyệt",
+        "Phần 1. Tổng quan CLB",
+        "Phần 2. Quy định CLB",
+        "Phần 3. Quy chế chi tiêu nội bộ",
+        "Phần 4. Chương trình nội bộ cố định hằng năm: Cozy Christmas, Tất niên, Camping hè và các chương trình khác",
+        "Phần 5. Chương trình ngoài CLB",
+        "Manual v1 được ban hành"
+      ],
+      "canChot": [
+        "Dàn ý 5 phần đã đủ chưa? Có thêm sinh hoạt hằng tuần, Discord, lưu trữ?",
+        "Ai chủ biên, ai viết từng phần?",
+        "Quy chế chi tiêu: ai soạn, ai duyệt?",
+        "Danh sách đầy đủ các chương trình nội bộ cố định và chương trình ngoài CLB đưa vào Manual?",
+        "Hạn bản thảo và hạn ban hành?"
+      ],
+      "theoNha": [],
+      "viec": [
+        { "id": "DV07-01", "ten": "Chốt dàn ý và người chủ biên", "goiY": "2026-10-18" },
+        { "id": "DV07-02", "ten": "Viết Phần 1. Tổng quan: lịch sử, tổ chức, câu chuyện Đón Nhận – Trưởng thành – Trao lại, logo, 6 nhà", "goiY": "2026-11-15" },
+        { "id": "DV07-03", "ten": "Viết Phần 2. Quy định CLB: quyền và nghĩa vụ thành viên, sinh hoạt, chuyên cần, khen thưởng, kỷ luật", "goiY": "2026-11-22" },
+        { "id": "DV07-04", "ten": "Viết Phần 3. Quy chế chi tiêu nội bộ: nguồn thu, mức chi, duyệt chi, chứng từ, công khai quỹ", "goiY": "2026-11-22" },
+        { "id": "DV07-05", "ten": "Viết Phần 4. Chương trình nội bộ cố định: mỗi chương trình một trang gồm mục đích, thời điểm, ban tổ chức, kinh phí, checklist", "goiY": "2026-11-29" },
+        { "id": "DV07-06", "ten": "Viết Phần 5. Chương trình ngoài CLB: danh mục, quy trình tổ chức, mẫu kế hoạch", "goiY": "2026-12-06" },
+        { "id": "DV07-07", "ten": "Gộp bản thảo, biên tập, gửi BCN và các nhà góp ý", "goiY": "2026-12-20" },
+        { "id": "DV07-08", "ten": "Chỉnh sửa, BCN duyệt, ban hành Manual v1", "goiY": "2027-01-10" }
+      ]
+    },
+    {
+      "id": "DV08",
+      "so": 8,
+      "ten": "Kế hoạch làm kỷ yếu CLB",
+      "nhom": "Nhận diện",
+      "mucTieu": "Làm một cuốn kỷ yếu ghi lại con người, hoạt động và các thế hệ của CLB; nội dung có nguồn và có sự đồng ý của người xuất hiện.",
+      "dieuKien": "Không có.",
+      "phuThuoc": [],
+      "boiCanh": "Mốc lịch sử có nguồn Page: thành lập 06/08/2015; trực thuộc Hội Sinh viên Trường ĐH Y khoa Phạm Ngọc Thạch từ 05/09/2018. Khi viết phần lịch sử, dùng bản đính chính 30/09/2026 trong bộ bàn giao.",
+      "sanPham": [
+        "Đề cương kỷ yếu: cấu trúc, số trang, phong cách",
+        "Dự toán và phương án kinh phí",
+        "Kho tư liệu ảnh, bài viết có ghi nguồn và đồng ý sử dụng",
+        "Bản dàn trang được duyệt",
+        "Kỷ yếu bản in hoặc bản điện tử"
+      ],
+      "canChot": [
+        "Phạm vi: kỷ yếu năm học 2026–2027, hay kỷ yếu nhiều thế hệ từ 2015?",
+        "Thời điểm ra mắt (ví dụ dịp sinh nhật CLB 06/08/2027)?",
+        "Hình thức: in, bản điện tử, hay cả hai? Số lượng và nguồn kinh phí?",
+        "Ban biên tập gồm ai? Mỗi nhà góp phần nào?",
+        "Cách xin đồng ý dùng ảnh và tên của thành viên, cựu thành viên?"
+      ],
+      "theoNha": ["Cử người vào ban biên tập", "Nộp tư liệu", "Trang của nhà"],
+      "viec": [
+        { "id": "DV08-01", "ten": "Lập ban biên tập; chốt phạm vi và thời điểm ra mắt", "goiY": "2026-11-08" },
+        { "id": "DV08-02", "ten": "Viết đề cương: các chương, số trang, phần của từng nhà", "goiY": "2026-11-29" },
+        { "id": "DV08-03", "ten": "Lập dự toán và phương án kinh phí", "goiY": "2026-12-13" },
+        { "id": "DV08-04", "ten": "Thu tư liệu: ảnh, bài viết, lời nhắn từ các thế hệ; ghi nguồn và đồng ý sử dụng", "goiY": "2027-03-28" },
+        { "id": "DV08-05", "ten": "Mỗi nhà viết trang của nhà mình", "goiY": "2027-03-28" },
+        { "id": "DV08-06", "ten": "Biên tập nội dung; kiểm dữ kiện lịch sử với nguồn đã đính chính", "goiY": "2027-04-25" },
+        { "id": "DV08-07", "ten": "Thiết kế, dàn trang, duyệt bản in thử", "goiY": "2027-06-13" },
+        { "id": "DV08-08", "ten": "In và ra mắt", "goiY": "2027-08-06" }
+      ]
+    },
+    {
+      "id": "DV09",
+      "so": 9,
+      "ten": "Kế hoạch phát triển nguồn tập huấn viên các chương trình",
+      "nhom": "Đào tạo",
+      "mucTieu": "Mỗi chương trình của CLB có đủ tập huấn viên đạt chuẩn và có lớp kế cận; con đường từ học viên lên trợ giảng rồi tập huấn viên được mô tả rõ.",
+      "dieuKien": "Không có.",
+      "phuThuoc": [],
+      "lienQuan": ["DV02", "DV10"],
+      "boiCanh": "Mẫu hồ sơ năng lực mô tả bậc Trao lại là tập huấn, dẫn dắt; có thể dùng bậc này để ghi nhận tập huấn viên.",
+      "sanPham": [
+        "Bảng nhu cầu tập huấn viên theo từng chương trình",
+        "Tiêu chuẩn trợ giảng và tập huấn viên",
+        "Lộ trình tập sự và phiếu đánh giá",
+        "Lớp tập huấn cho tập huấn viên",
+        "Danh sách tập huấn viên, trợ giảng năm học 2026–2027"
+      ],
+      "canChot": [
+        "Những chương trình nào cần tập huấn viên trong năm nay?",
+        "Tiêu chuẩn tối thiểu để làm trợ giảng, tập huấn viên? Ai đánh giá?",
+        "Cố vấn chuyên môn cho từng chương trình là ai?",
+        "Ghi nhận tập huấn viên bằng gì: bậc Trao lại trong hồ sơ năng lực, điểm cộng, chứng nhận?"
+      ],
+      "theoNha": [],
+      "viec": [
+        { "id": "DV09-01", "ten": "Lập bảng nhu cầu: từng chương trình cần bao nhiêu tập huấn viên, trợ giảng; hiện có bao nhiêu", "goiY": "2026-10-25" },
+        { "id": "DV09-02", "ten": "Soạn tiêu chuẩn và lộ trình tập sự: học viên, trợ giảng, dạy có giám sát, tập huấn viên", "goiY": "2026-11-08" },
+        { "id": "DV09-03", "ten": "Mời cố vấn chuyên môn cho từng chương trình", "goiY": "2026-11-15" },
+        { "id": "DV09-04", "ten": "Mở đăng ký, chọn ứng viên tập huấn viên từ các nhà", "goiY": "2026-11-22" },
+        { "id": "DV09-05", "ten": "Tổ chức lớp tập huấn cho tập huấn viên: chuyên môn và kỹ năng dạy", "goiY": "2026-12-20" },
+        { "id": "DV09-06", "ten": "Cho ứng viên dạy có giám sát; đánh giá bằng phiếu", "goiY": "2027-03-28" },
+        { "id": "DV09-07", "ten": "Công nhận tập huấn viên; cập nhật hồ sơ năng lực", "goiY": "2027-04-11" }
+      ]
+    },
+    {
+      "id": "DV10",
+      "so": 10,
+      "ten": "Kế hoạch tập huấn Junior",
+      "nhom": "Đào tạo",
+      "mucTieu": "Thành viên Junior có lộ trình rõ: hiểu CLB, đạt các kỹ năng nền, có người dẫn dắt và biết cần làm gì để lên Senior.",
+      "dieuKien": "Không có. Lịch cụ thể xếp sau khi chốt mốc tuyển quân (đầu việc 12).",
+      "phuThuoc": [],
+      "lienQuan": ["DV12", "DV09"],
+      "boiCanh": "",
+      "sanPham": [
+        "Chương trình khung tập huấn Junior: nội dung, số buổi, lịch",
+        "Tài liệu và người dạy cho từng buổi",
+        "Bảng ghép Junior với người dẫn dắt",
+        "Kết quả lượng giá cuối đợt của từng Junior"
+      ],
+      "canChot": [
+        "Nội dung bắt buộc cho Junior: kỹ năng nào, kiến thức nào, văn hóa CLB?",
+        "Số buổi, lịch, hình thức: theo nhà hay chung toàn CLB?",
+        "Ai phụ trách chung? Mỗi nhà cử ai dẫn dắt Junior?",
+        "Lượng giá thế nào thì coi là hoàn thành? Liên hệ với điều kiện lên Senior?",
+        "Bắt đầu khi nào sau tuyển quân?"
+      ],
+      "theoNha": ["Cử người dẫn dắt", "Ghép xong Junior"],
+      "viec": [
+        { "id": "DV10-01", "ten": "Soạn chương trình khung: mục tiêu, danh sách buổi, kỹ năng nền", "goiY": "2026-11-01" },
+        { "id": "DV10-02", "ten": "Phân công người dạy và tài liệu từng buổi", "goiY": "2026-11-15" },
+        { "id": "DV10-03", "ten": "Ghép Junior với người dẫn dắt ở từng nhà", "goiY": "", "luuY": "Sau khi có kết quả tuyển quân" },
+        { "id": "DV10-04", "ten": "Buổi đón nhận: giới thiệu CLB, câu chuyện, 6 nhà, quy định", "goiY": "", "luuY": "Sau khi có kết quả tuyển quân" },
+        { "id": "DV10-05", "ten": "Triển khai các buổi tập huấn theo lịch", "goiY": "" },
+        { "id": "DV10-06", "ten": "Lượng giá cuối đợt; ghi bậc đạt vào hồ sơ năng lực", "goiY": "" },
+        { "id": "DV10-07", "ten": "Họp rút kinh nghiệm; cập nhật chương trình cho năm sau", "goiY": "" }
+      ]
+    },
+    {
+      "id": "DV11",
+      "so": 11,
+      "ten": "Chương trình mới: Kỹ năng quản lý thời gian",
+      "nhom": "Đào tạo",
+      "mucTieu": "Tổ chức workshop Quản lý thời gian cho sinh viên y khoa: hai buổi trực tiếp, buổi nào cũng có lý thuyết và thực hành, người học ra về với một lịch tuần dùng được. Cố vấn: anh Long.",
+      "dieuKien": "Không có.",
+      "phuThuoc": [],
+      "boiCanh": "Đã có trong thư mục SKILL QUẢN LÝ THỜI GIAN: kế hoạch dự thảo bản 0.7 ngày 05/10/2026 (chưa duyệt; dự kiến 80–90 người, 2 buổi × 180 phút, cách nhau 2 tuần), bài giảng, slide v0.5, biểu mẫu BM01–BM14, sổ tay người học, hướng dẫn người dẫn nhóm, nội dung truyền thông và công cụ Lịch tuần khả thi đã đặt lên web.",
+      "sanPham": [
+        "Kế hoạch workshop được duyệt, có ngày và địa điểm",
+        "Ban tổ chức và người dẫn nhóm đã tập huấn",
+        "Danh sách đăng ký và kết quả khảo sát trước workshop (BM01)",
+        "Hai buổi workshop đã tổ chức",
+        "Báo cáo sau chương trình (BM14)"
+      ],
+      "canChot": [
+        "Duyệt kế hoạch dự thảo 0.7: giữ 2 buổi × 180 phút, cách nhau 2 tuần?",
+        "Ngày tổ chức buổi 1, buổi 2 và địa điểm?",
+        "Trưởng ban tổ chức và các tiểu ban: nội dung, hậu cần, truyền thông?",
+        "Người dẫn nhóm: kế hoạch dự thảo cần 11–12 người cho 80–90 người học; lấy từ đâu?",
+        "Kinh phí in sổ tay và biểu mẫu?"
+      ],
+      "theoNha": ["Cử người dẫn nhóm"],
+      "viec": [
+        { "id": "DV11-01", "ten": "Cố vấn và BCN duyệt kế hoạch; chốt ngày và địa điểm", "goiY": "2026-10-18" },
+        { "id": "DV11-02", "ten": "Lập ban tổ chức: trưởng ban, nội dung, hậu cần, truyền thông", "goiY": "2026-10-18" },
+        { "id": "DV11-03", "ten": "Thử công cụ Lịch tuần trên điện thoại Android và iPhone theo phiếu thử", "goiY": "2026-10-25" },
+        { "id": "DV11-04", "ten": "Tuyển và tập huấn người dẫn nhóm theo Hướng dẫn người dẫn nhóm", "goiY": "", "luuY": "Tính ngược từ ngày buổi 1" },
+        { "id": "DV11-05", "ten": "Mở đăng ký kèm khảo sát trước workshop (BM01); truyền thông", "goiY": "", "luuY": "Tính ngược từ ngày buổi 1" },
+        { "id": "DV11-06", "ten": "In sổ tay người học, biểu mẫu, thẻ tình huống", "goiY": "", "luuY": "Tính ngược từ ngày buổi 1" },
+        { "id": "DV11-07", "ten": "Tổ chức buổi 1", "goiY": "" },
+        { "id": "DV11-08", "ten": "Nhắc và rà soát giữa hai buổi", "goiY": "" },
+        { "id": "DV11-09", "ten": "Tổ chức buổi 2", "goiY": "" },
+        { "id": "DV11-10", "ten": "Khảo sát sau workshop (BM14), báo cáo, rút kinh nghiệm", "goiY": "" }
+      ]
+    },
+    {
+      "id": "DV12",
+      "so": 12,
+      "ten": "Chốt tuyển quân",
+      "nhom": "Tuyển quân và truyền thông",
+      "mucTieu": "Chốt phương án tuyển quân năm học 2026–2027: các điểm thay đổi so với mùa trước và thông điệp truyền thông tập trung vào giá trị cốt lõi của CLB. Nhân dịp này giới thiệu cho mọi người biết CLB đã có giá trị cốt lõi, sứ mệnh, tầm nhìn.",
+      "dieuKien": "Cần chốt chính thức câu chữ giá trị cốt lõi, sứ mệnh, tầm nhìn trước khi truyền thông.",
+      "phuThuoc": [],
+      "lienQuan": ["DV10", "DV07"],
+      "boiCanh": "Theo hồ sơ CLB ngày 30/09/2026: năm giá trị (Bản lĩnh – Đồng hành – Biết ơn – Trách nhiệm – Chuyên nghiệp) và câu sứ mệnh đang ở trạng thái ứng viên; chưa ghi nhận câu tầm nhìn. Câu chuyện trung tâm đã thống nhất: Đón Nhận – Trưởng thành – Trao lại. Nguyên tắc nền: liêm chính và thực chất.",
+      "sanPham": [
+        "Biên bản chốt giá trị cốt lõi, sứ mệnh, tầm nhìn: câu chữ, người duyệt, ngày hiệu lực",
+        "Phương án tuyển quân: điểm thay đổi, tiêu chí, quy trình, mốc thời gian",
+        "Kế hoạch truyền thông và bộ nội dung theo giá trị cốt lõi",
+        "Danh sách trúng tuyển và phân nhà",
+        "Báo cáo tổng kết mùa tuyển quân"
+      ],
+      "canChot": [
+        "Chốt chính thức giá trị cốt lõi, sứ mệnh, tầm nhìn: câu chữ chính xác, người duyệt, ngày hiệu lực?",
+        "Các điểm thay đổi của mùa tuyển quân này: đối tượng, số lượng, vòng tuyển, tiêu chí, cách xếp nhà?",
+        "Mốc thời gian: mở đơn, đóng đơn, các vòng, công bố?",
+        "Thông điệp chính và kênh truyền thông; ai duyệt nội dung trước khi đăng?",
+        "Trưởng ban tuyển quân và các tiểu ban?"
+      ],
+      "theoNha": ["Cử người vào ban tuyển quân", "Nhận Junior mới"],
+      "viec": [
+        { "id": "DV12-01", "ten": "Chốt chính thức giá trị cốt lõi, sứ mệnh, tầm nhìn; ghi biên bản câu chữ, người duyệt, ngày hiệu lực", "goiY": "2026-10-11" },
+        { "id": "DV12-02", "ten": "Giới thiệu giá trị cốt lõi, sứ mệnh, tầm nhìn cho toàn thể thành viên trước khi truyền thông ra ngoài", "goiY": "2026-10-18" },
+        { "id": "DV12-03", "ten": "Chốt phương án tuyển quân: điểm thay đổi, tiêu chí, quy trình, mốc thời gian", "goiY": "2026-10-18" },
+        { "id": "DV12-04", "ten": "Lập ban tuyển quân và phân công tiểu ban", "goiY": "2026-10-18" },
+        { "id": "DV12-05", "ten": "Soạn kế hoạch truyền thông: thông điệp theo từng giá trị, lịch đăng, kênh", "goiY": "2026-10-25" },
+        { "id": "DV12-06", "ten": "Sản xuất nội dung (bài viết, hình ảnh, video); duyệt trước khi đăng", "goiY": "", "luuY": "Theo mốc mở đơn" },
+        { "id": "DV12-07", "ten": "Mở đơn, sơ tuyển, các vòng tuyển", "goiY": "", "luuY": "Theo mốc mở đơn" },
+        { "id": "DV12-08", "ten": "Công bố kết quả, phân nhà, bàn giao sang tập huấn Junior (đầu việc 10)", "goiY": "" },
+        { "id": "DV12-09", "ten": "Tổng kết mùa tuyển quân: số đăng ký, số trúng tuyển, bài học", "goiY": "" }
+      ]
+    },
+    {
+      "id": "DV13",
+      "so": 13,
+      "ten": "Danh mục tiêu chí đánh giá danh hiệu",
+      "nhom": "Năng lực và ghi nhận",
+      "mucTieu": "Có bộ tiêu chí rõ ràng, đo được và công bố từ đầu năm cho các danh hiệu: Super Junior, Super Senior, Super Group, Bài trình xuất sắc nhất và một số danh hiệu khác. Kết quả xét dựa trên dữ liệu thật: chuyên cần, điểm cộng, hồ sơ năng lực.",
+      "dieuKien": "Không có. Nên chốt cùng lúc với quy định điểm cộng (đầu việc 14).",
+      "phuThuoc": [],
+      "lienQuan": ["DV14", "DV05"],
+      "boiCanh": "",
+      "sanPham": [
+        "Danh mục danh hiệu năm học 2026–2027",
+        "Bảng tiêu chí từng danh hiệu: tiêu chí, trọng số, nguồn dữ liệu",
+        "Phiếu chấm Bài trình",
+        "Quy trình xét và hội đồng xét",
+        "Bản công bố tiêu chí cho toàn CLB"
+      ],
+      "canChot": [
+        "Danh sách danh hiệu năm nay: ngoài bốn danh hiệu đã nêu, thêm danh hiệu nào?",
+        "Mỗi danh hiệu xét theo tiêu chí gì, trọng số bao nhiêu, lấy dữ liệu từ đâu?",
+        "Hội đồng xét gồm ai? Xử lý thế nào khi bằng điểm hoặc có khiếu nại?",
+        "Kỳ xét theo học kỳ hay cả năm? Trao vào dịp nào?",
+        "Phần thưởng và kinh phí?"
+      ],
+      "theoNha": ["Gửi đề xuất danh hiệu", "Góp ý dự thảo tiêu chí"],
+      "viec": [
+        { "id": "DV13-01", "ten": "Lập tổ soạn tiêu chí; thu đề xuất danh hiệu từ các nhà", "goiY": "2026-10-25" },
+        { "id": "DV13-02", "ten": "Soạn tiêu chí Super Junior và Super Senior", "goiY": "2026-11-08" },
+        { "id": "DV13-03", "ten": "Soạn tiêu chí Super Group", "goiY": "2026-11-08" },
+        { "id": "DV13-04", "ten": "Soạn phiếu chấm Bài trình xuất sắc nhất", "goiY": "2026-11-08" },
+        { "id": "DV13-05", "ten": "Soạn tiêu chí các danh hiệu khác được chọn", "goiY": "2026-11-15" },
+        { "id": "DV13-06", "ten": "Lấy ý kiến các nhà; chỉnh sửa", "goiY": "2026-11-22" },
+        { "id": "DV13-07", "ten": "BCN duyệt; công bố tiêu chí cho toàn CLB", "goiY": "2026-11-29" },
+        { "id": "DV13-08", "ten": "Xét và trao danh hiệu theo kỳ đã chốt", "goiY": "" }
+      ]
+    },
+    {
+      "id": "DV14",
+      "so": 14,
+      "ten": "Quản lý điểm cộng của thành viên CLB",
+      "nhom": "Năng lực và ghi nhận",
+      "mucTieu": "Điểm cộng của thành viên được ghi theo một quy định thống nhất, có minh chứng, có người duyệt, công khai định kỳ và dùng được cho việc xét danh hiệu.",
+      "dieuKien": "Không có. Nối với điểm danh (đầu việc 5) và app năng lực (đầu việc 4) khi hai việc đó sẵn sàng.",
+      "phuThuoc": [],
+      "lienQuan": ["DV13", "DV05", "DV04"],
+      "boiCanh": "",
+      "sanPham": [
+        "Quy định điểm cộng: bảng điểm theo loại hoạt động",
+        "Quy trình ghi – duyệt – công khai – khiếu nại",
+        "Sổ điểm cộng dùng chung",
+        "Bảng điểm công khai định kỳ theo nhà",
+        "Tổng kết điểm cuối kỳ phục vụ xét danh hiệu"
+      ],
+      "canChot": [
+        "Hoạt động nào được cộng điểm, mỗi loại bao nhiêu điểm? Có điểm trừ không?",
+        "Ai ghi, ai duyệt điểm? Minh chứng cần có?",
+        "Ghi ở đâu: Google Sheet chung, hay gộp vào app năng lực (đầu việc 4)?",
+        "Chu kỳ công khai bảng điểm và thời hạn khiếu nại?",
+        "Điểm cộng dùng vào việc gì: xét danh hiệu, ưu tiên tham gia chương trình, lên cấp?"
+      ],
+      "theoNha": ["Cử người ghi điểm"],
+      "viec": [
+        { "id": "DV14-01", "ten": "Soạn bảng loại hoạt động và mức điểm cộng", "goiY": "2026-11-01" },
+        { "id": "DV14-02", "ten": "Chốt quy trình ghi – duyệt – công khai – khiếu nại", "goiY": "2026-11-08" },
+        { "id": "DV14-03", "ten": "Dựng sổ điểm cộng dùng ngay, trước khi có app", "goiY": "2026-11-15" },
+        { "id": "DV14-04", "ten": "Mỗi nhà cử người ghi điểm; hướng dẫn cách ghi và minh chứng", "goiY": "2026-11-15" },
+        { "id": "DV14-05", "ten": "BCN duyệt quy định; công bố cùng tiêu chí danh hiệu (đầu việc 13)", "goiY": "2026-11-29" },
+        { "id": "DV14-06", "ten": "Công khai bảng điểm hằng tháng", "goiY": "", "luuY": "Việc lặp lại hằng tháng" },
+        { "id": "DV14-07", "ten": "Nối dữ liệu điểm danh (đầu việc 5) và app năng lực (đầu việc 4) khi sẵn sàng", "goiY": "" },
+        { "id": "DV14-08", "ten": "Tổng kết điểm cuối kỳ; chuyển hội đồng xét danh hiệu", "goiY": "" }
+      ]
+    }
+  ]
+}
